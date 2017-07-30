@@ -27,7 +27,7 @@ $neat-grid: (
 $grid-768: (
   columns: 2,
   gutter: 3rem,
-  media: "(max-width: 768px)",
+  media: "(screen-only and max-width: 768px)",
   color: rgba(#00d4ff, 0.25),
   direction: ltr,
 );

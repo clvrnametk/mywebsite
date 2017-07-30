@@ -1,0 +1,73 @@
+//------------------------------------
+// Setup Bourbon
+//------------------------------------
+
+// Modules and Variables -or- Libraries
+@import "./libraries/bourbon/bourbon.scss";
+@import "./libraries/neat/neat.scss";
+
+// Partials
+@import "./libraries/_reset.scss";
+
+
+
+
+//------------------------------------
+// All the Grids + Breakpoints
+//------------------------------------
+
+// Default Grid Settings
+$neat-grid: (
+  columns: 12,
+  gutter: 2rem,
+  direction: ltr,
+);
+
+// Custom grid
+$grid-768: (
+  columns: 2,
+  gutter: 3rem,
+  media: "(screen-only and max-width: 768px)",
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
+
+
+$grid-480: (
+  columns: 1,
+  gutter: 3rem,
+  media: "(max-width: 480px)",
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
+
+
+
+
+//------------------------------------
+// Clearfic all the things
+//------------------------------------
+
+// Cleax all elemtns
+// * {
+//   @include grid-container;
+// }
+
+
+
+
+//------------------------------------
+// Main Styling
+//------------------------------------
+
+
+body {
+  @include grid-visual;
+  padding-top: 4rem;
+}
+
+
+
+//------------------------------------
+// Media Query Styling
+//------------------------------------
