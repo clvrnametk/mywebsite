@@ -1,0 +1,132 @@
+//------------------------------------
+// Setup Bourbon
+//------------------------------------
+
+// Modules and Variables -or- Libraries
+@import "./libraries/bourbon/bourbon.scss";
+@import "./libraries/neat/neat.scss";
+
+// Partials
+@import "./libraries/_reset.scss";
+
+
+
+
+//------------------------------------
+// All the Grids + Breakpoints
+//------------------------------------
+
+// Default Grid Settings
+$neat-grid: (
+  columns: 12,
+  gutter: 2rem,
+  direction: ltr,
+);
+
+// Custom grid
+$grid-768: (
+  columns: 2,
+  gutter: 3rem,
+  media: "(max-width: 768px)",
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
+
+
+$grid-480: (
+  columns: 1,
+  gutter: 3rem,
+  media: "(max-width: 480px)",
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
+
+
+
+
+//------------------------------------
+// Clearfic all the things
+//------------------------------------
+
+// Cleax all elemtns
+// * {
+//   @include grid-container;
+// }
+
+
+
+
+//------------------------------------
+// Main Styling
+//------------------------------------
+
+
+body {
+  @include grid-visual;
+  padding-top: 4rem;
+}
+
+.global-parent {
+  width: 100%;
+//  height: 2rem;
+  @include grid-visual;
+}
+
+.--square {
+  width: 100%;
+  height: 3rem;
+    img {
+      width: 100%;
+    }
+    h2 {
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, .5);
+    }
+    p {
+      width: 100%;
+      text-align: center;
+      background-color: rgba(0, 0, 0, .5);
+    }
+}
+
+.object-1 {
+  background-color: CADETBLUE;
+  @include grid-column(4);
+}
+
+.object-2 {
+  background-color: LIGHTCYAN;
+    @include grid-column(4);
+}
+
+.object-3 {
+  background-color: DIMGRAY;
+  @include grid-column(4);
+}
+
+.row-1{
+  @include grid-container;
+  background-color: lightblue;
+}
+
+//------------------------------------
+// Media Query Styling
+//------------------------------------
+
+@include grid-media($grid-768) {
+  .--square {
+    @include grid-column(2);
+    background-color: orange;
+  }
+  body {
+  }
+}
+@include grid-media($grid-480) {
+  .--square {
+    @include grid-column(1);
+    background-color: orange;
+  }
+  body {
+  }
+}
