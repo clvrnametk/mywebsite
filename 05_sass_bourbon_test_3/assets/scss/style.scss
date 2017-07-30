@@ -1,0 +1,124 @@
+//------------------------------------
+// Setup Bourbon
+//------------------------------------
+
+// Modules and Variables -or- Libraries
+@import "./libraries/bourbon/bourbon.scss";
+@import "./libraries/neat/neat.scss";
+
+// Partials
+@import "./libraries/_reset.scss";
+
+
+
+
+//------------------------------------
+// All the Grids + Breakpoints
+//------------------------------------
+
+// Default Grid Settings
+// $neat-grid: (
+//   columns: 12,
+//   gutter: 2rem,
+//   direction: ltr,
+// );
+
+// Custom grid
+// $grid-768: (
+//   columns: 2,
+//   gutter: 3rem,
+//   media: "(max-width: 768px)",
+//   color: rgba(#00d4ff, 0.25),
+//   direction: ltr,
+// );
+//
+//
+// $grid-480: (
+//   columns: 1,
+//   gutter: 3rem,
+//   media: "(max-width: 480px)",
+//   color: rgba(#00d4ff, 0.25),
+//   direction: ltr,
+// );
+
+
+
+
+//------------------------------------
+// Clearfic all the things
+//------------------------------------
+
+// Cleax all elemtns
+// * {
+//   @include grid-container;
+// }
+
+// .clearfix:after {
+//   content: ".";
+//   display: block;
+//   clear: both;
+//   visibility: hidden;
+//   line-height: 0;
+//   height: 0;
+// }
+
+//------------------------------------
+// Main Styling
+//------------------------------------
+
+body {
+  @include grid-visual();
+}
+
+.viewport-parent {
+}
+
+.row-FV {
+  height: 100vh;
+}
+
+.three-col-grid {
+  @include grid-column(4);
+  background-color: rgba(0, 0, 255, 0.2);
+  height: 80%;
+}
+
+.one-col-grid {
+  @include grid-column(12);
+  background-color: rgba(0, 255, 0, 0.2);
+  height: 20%;
+}
+
+.flex-container {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+    h1 {
+      align-self: center;
+    }
+}
+
+.image-container {
+  width: 100%;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: black;
+}
+
+//------------------------------------
+// Media Query Styling
+//------------------------------------
+
+// @include grid-media($grid-768) {
+//
+// }
+//
+// @include grid-media($grid-480) {
+//
+// }

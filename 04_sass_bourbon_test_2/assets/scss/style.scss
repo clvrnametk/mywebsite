@@ -27,7 +27,7 @@ $neat-grid: (
 $grid-768: (
   columns: 2,
   gutter: 3rem,
-  media: "(screen-only and max-width: 768px)",
+  media: "(max-width: 768px)",
   color: rgba(#00d4ff, 0.25),
   direction: ltr,
 );
@@ -53,8 +53,14 @@ $grid-480: (
 //   @include grid-container;
 // }
 
-
-
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 
 //------------------------------------
 // Main Styling
@@ -72,9 +78,16 @@ body {
   @include grid-visual;
 }
 
+.row-1{
+  @include grid-container;
+  height: 40rem;
+  background-color: lightblue;
+}
+
 .--square {
   width: 100%;
   height: 3rem;
+  margin-bottom: 26rem;
     img {
       width: 100%;
     }
@@ -105,10 +118,6 @@ body {
   @include grid-column(4);
 }
 
-.row-1{
-  @include grid-container;
-  background-color: lightblue;
-}
 
 //------------------------------------
 // Media Query Styling
