@@ -10,7 +10,9 @@
 @import "./libraries/_reset.scss";
 
 
-
+* {
+  @include grid-container;
+}
 
 //------------------------------------
 // GLOBAL: Breakpoints
