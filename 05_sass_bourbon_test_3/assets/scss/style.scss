@@ -1,5 +1,5 @@
 //------------------------------------
-// Setup Bourbon
+// IMPORTS
 //------------------------------------
 
 // Modules and Variables -or- Libraries
@@ -13,57 +13,73 @@
 
 
 //------------------------------------
-// All the Grids + Breakpoints
+// GLOBAL: Breakpoints
 //------------------------------------
 
-// Default Grid Settings
-// $neat-grid: (
-//   columns: 12,
-//   gutter: 2rem,
-//   direction: ltr,
-// );
+// 768 GRID
+$grid-768: (
+  columns: 2,
+  gutter: 3rem,
+  media: "(max-width: 768px)",
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
 
-// Custom grid
-// $grid-768: (
-//   columns: 2,
-//   gutter: 3rem,
-//   media: "(max-width: 768px)",
-//   color: rgba(#00d4ff, 0.25),
-//   direction: ltr,
-// );
-//
-//
-// $grid-480: (
-//   columns: 1,
-//   gutter: 3rem,
-//   media: "(max-width: 480px)",
-//   color: rgba(#00d4ff, 0.25),
-//   direction: ltr,
-// );
+// 480 GRID
+$grid-480: (
+  columns: 1,
+  gutter: 3rem,
+  media: "(max-width: 480px)",
+  color: rgba(#00d4ff, 0.25),
+  direction: ltr,
+);
 
 
 
 
 //------------------------------------
-// Clearfic all the things
+// GLOBAL Styling
 //------------------------------------
 
-// Cleax all elemtns
-// * {
-//   @include grid-container;
-// }
 
-// .clearfix:after {
-//   content: ".";
-//   display: block;
-//   clear: both;
-//   visibility: hidden;
-//   line-height: 0;
-//   height: 0;
-// }
+// 100VF CLASS
+.row-FV {
+  height: 100vh;
+}
+
+// Grid Styles
+.one-col-grid-head {
+  @include grid-column(12);
+  background-color: rgba(0, 255, 0, 0.2);
+  height: 15%;
+}
+
+.one-col-grid-h1 {
+  @include grid-column(12);
+  height: 15%;
+  background-color: rgba(150, 150, 50, 0.2);
+}
+.one-col-grid-hero {
+  @include grid-column(12);
+  background-color: rgba(0, 255, 255, 0.2);
+  height: 100%;
+}
+
+.three-col-grid {
+  @include grid-column(4);
+  background-color: rgba(0, 0, 255, 0.2);
+  height: 40%;
+  // Media Query
+  @include grid-media($grid-768){
+    @include grid-column(2);
+  }
+}
+
+
+
 
 //------------------------------------
-// Main Styling
+// GLOBAL: Page Styling
 //------------------------------------
 
 body {
@@ -73,52 +89,108 @@ body {
 .viewport-parent {
 }
 
-.row-FV {
-  height: 100vh;
+footer {
+  height: 6rem;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
-.three-col-grid {
-  @include grid-column(4);
-  background-color: rgba(0, 0, 255, 0.2);
-  height: 80%;
+header {
+  width: 100%;
+  height: 7.5rem;
+  background-color: rgba(0, 0, 0, 0.8);
+  // fixed position based on view port
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  //animation
+  transition: all 0.2s ease-out;
 }
 
-.one-col-grid {
-  @include grid-column(12);
-  background-color: rgba(0, 255, 0, 0.2);
-  height: 20%;
+// Animation class for navigation
+.shrink {
+  height: 5rem;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
+aside {
+  @include grid-column(1);
+  @include grid-push(11);
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 2px;
+  border-color: rgba(0, 0, 0, 0.5);
+  border-style: solid;
+  border-radius: 100%;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  transition: all 0.2s ease-out;
+}
+
+.shift-up {
+  bottom: 6rem;
+}
+
+//------------------------------------
+// GLOBAL: Flexbox Container Structure
+//------------------------------------
+
+// Container full size to center content inside
 .flex-container {
   height: 100%;
   display: flex;
+  justify-content: center;
+  // TEMP: Flexbox for flex container <DELETE>
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around;
+  // TEMP: Code to center copy in sample <DELETE>
+  h1 {
+    align-self: center;
+  }
+}
+
+// Items in container: Apply flex box to this
+.center-container {
+  // Set max width based on image asset
+  max-width: 200px;
+  // Flexbox: Center content-container
+  display: flex;
+  justify-content: center;
+  align-items: center;
     h1 {
-      align-self: center;
+      text-align: center;
     }
 }
 
-.image-container {
+// Holds all content: set all widths to 100% for flex-wrap
+.content-container {
+  max-width: 300px;
   width: 100%;
+    img {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
 }
 
-.image {
-  width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  background-color: black;
-}
+
+//------------------------------------
+// HOME PAGE: Styling
+//------------------------------------
+
+
+
+
 
 //------------------------------------
 // Media Query Styling
 //------------------------------------
 
-// @include grid-media($grid-768) {
-//
-// }
-//
-// @include grid-media($grid-480) {
-//
-// }
+@include grid-media($grid-768) {
+
+}
+
+@include grid-media($grid-480) {
+
+}
