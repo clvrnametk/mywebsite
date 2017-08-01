@@ -1,7 +1,3 @@
-// Check to see if doc is laoded
-console.log('loaded bro!!');
-
-
 //------------------------------------
 // ANIMATED NAV & COUNTER
 //------------------------------------
@@ -19,19 +15,19 @@ $(document).on ('scroll', function(){
 });
 
 // Shift Counter up when the page goes to the bottom
-$(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() == $(document).height())
-   {
-       $('aside').addClass('shift-up');
-   }
-   else
-   {
-     $('aside').removeClass('shift-up');
-   }
-});
+// $(window).scroll(function() {
+//    if($(window).scrollTop() + $(window).height() == $(document).height())
+//    {
+//        $('aside').addClass('shift-up');
+//    }
+//    else
+//    {
+//      $('aside').removeClass('shift-up');
+//    }
+// });
 
 //------------------------------------
-// Scrollify
+// SCROLLIFY: Snap on scroll + Increment Counter
 //------------------------------------
 
 $(function(){
@@ -42,9 +38,16 @@ $(function(){
 
     before: function(i) {
       console.log(i);
+      if (i == 5) {
+        $('.counter-num').html('5 of 5');
+        $('aside').addClass('shift-up');
+      } else if (i < 5) {
+        $('aside').removeClass('shift-up');
+        $('.counter-num').html((i+1) + ' of 5');
+      };
     },
     after: function(i) {
-      $('.counter-num').html((i+1) + ' of 5');
+//      $('.counter-num').html((i+1) + ' of 5');
     }
   })
 });
