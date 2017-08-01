@@ -3,7 +3,7 @@ console.log('loaded bro!!');
 
 
 //------------------------------------
-// GLOBAL: Event Listeners
+// ANIMATED NAV & COUNTER
 //------------------------------------
 
 // Shrink meny on scroll down
@@ -29,3 +29,43 @@ $(window).scroll(function() {
      $('aside').removeClass('shift-up');
    }
 });
+
+//------------------------------------
+// Scrollify
+//------------------------------------
+
+$(function(){
+  $.scrollify({
+    section:".row-FV",
+    scrollbars:false,
+    interstitialSection : "footer",
+
+    before: function(i) {
+      console.log(i);
+    }
+  })
+});
+
+
+//------------------------------------
+// SAMPLE ***************** BELOW
+//------------------------------------
+
+// $.scrollify({
+//   section : "section",
+//   sectionName : "section-name",
+//   interstitialSection : "",
+//   easing: "easeOutExpo",
+//   scrollSpeed: 1100,
+//   offset : 0,
+//   scrollbars: true,
+//   standardScrollElements: "",
+//   setHeights: true,
+//   overflowScroll: true,
+//   updateHash: true,
+//   touchScroll:true,
+//   before:function() {},
+//   after:function() {},
+//   afterResize:function() {},
+//   afterRender:function() {}
+// });

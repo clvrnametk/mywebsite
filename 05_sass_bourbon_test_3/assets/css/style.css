@@ -141,4 +141,16 @@ aside {
     width: 100%;
     margin-bottom: 1rem; }
 
+.module-two {
+  background-color: red; }
+
+.module-three {
+  background-color: purple; }
+
+.module-four {
+  background-color: darkgrey; }
+
+.module-five {
+  background-color: magenta; }
+
 /*# sourceMappingURL=style.css.map */
