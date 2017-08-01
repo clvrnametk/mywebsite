@@ -42,6 +42,9 @@ $(function(){
 
     before: function(i) {
       console.log(i);
+    },
+    after: function(i) {
+      $('.counter-num').html((i+1) + ' of 5');
     }
   })
 });

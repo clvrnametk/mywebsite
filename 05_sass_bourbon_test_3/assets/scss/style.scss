@@ -116,8 +116,8 @@ header {
 }
 
 aside {
-  @include grid-column(1);
-  @include grid-push(11);
+  // @include grid-column(1);
+  // @include grid-push(11);
   width: 4.25rem;
   height: 4.25rem;
   border: 2px;
@@ -128,6 +128,13 @@ aside {
   bottom: 3rem;
   right: 3rem;
   transition: all 0.2s ease-out;
+
+  font-family: helvetica;
+  font-size: .75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .shift-up {

@@ -98,10 +98,6 @@ header {
   background-color: rgba(255, 255, 255, 0.8); }
 
 aside {
-  width: calc(8.3333333333% - 21.6666666667px);
-  float: left;
-  margin-left: 20px;
-  margin-left: calc(91.6666666667% - 38.3333333333px + 40px);
   width: 4.25rem;
   height: 4.25rem;
   border: 2px;
@@ -111,7 +107,12 @@ aside {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
-  transition: all 0.2s ease-out; }
+  transition: all 0.2s ease-out;
+  font-family: helvetica;
+  font-size: .75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .shift-up {
   bottom: 6rem; }
