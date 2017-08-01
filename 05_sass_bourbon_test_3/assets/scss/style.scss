@@ -45,8 +45,9 @@ $grid-480: (
 
 
 // 100VF CLASS
-.row-FV {
-  height: 100vh;
+.section-VF {
+  // This is being handeled by scrollify, footer breaks otherwise.
+  //height: 100vh;
 }
 
 // Grid Styles
@@ -58,8 +59,8 @@ $grid-480: (
 
 .one-col-grid-h1 {
   @include grid-column(12);
-  height: 15%;
   background-color: rgba(150, 150, 50, 0.2);
+  height: 15%;
 }
 .one-col-grid-hero {
   @include grid-column(12);
@@ -85,7 +86,7 @@ $grid-480: (
 //------------------------------------
 
 body {
-  @include grid-visual();
+//  @include grid-visual();
 }
 
 .viewport-parent {
@@ -111,7 +112,7 @@ header {
 
 // Animation class for navigation
 .shrink {
-  height: 5rem;
+  height: 4rem;
   background-color: rgba(255, 255, 255, 0.8);
 }
 
@@ -120,10 +121,12 @@ aside {
   // @include grid-push(11);
   width: 4.25rem;
   height: 4.25rem;
+
   border: 2px;
   border-color: rgba(0, 0, 0, 0.5);
   border-style: solid;
   border-radius: 100%;
+
   position: fixed;
   bottom: 3rem;
   right: 3rem;
@@ -150,6 +153,11 @@ aside {
   height: 100%;
   display: flex;
   justify-content: center;
+
+  border: 2px;
+  border-color: rgba(200, 200, 200, 0.5);
+  border-style: solid;
+
   // TEMP: Flexbox for flex container <DELETE>
   flex-wrap: wrap;
   justify-content: center;

@@ -40,9 +40,6 @@ table {
   content: "";
   display: block; }
 
-.row-FV {
-  height: 100vh; }
-
 .one-col-grid-head {
   width: calc(100% - 40px);
   float: left;
@@ -54,8 +51,8 @@ table {
   width: calc(100% - 40px);
   float: left;
   margin-left: 20px;
-  height: 15%;
-  background-color: rgba(150, 150, 50, 0.2); }
+  background-color: rgba(150, 150, 50, 0.2);
+  height: 15%; }
 
 .one-col-grid-hero {
   width: calc(100% - 40px);
@@ -76,9 +73,6 @@ table {
       float: left;
       margin-left: 3rem; } }
 
-body {
-  background-image: repeating-linear-gradient(to right, transparent, transparent 20px, rgba(0, 212, 255, 0.25) 20px, rgba(0, 212, 255, 0.25) calc(8.3333333333% - 21.6666666667px + 20px)); }
-
 footer {
   height: 6rem;
   width: 100%;
@@ -94,7 +88,7 @@ header {
   transition: all 0.2s ease-out; }
 
 .shrink {
-  height: 5rem;
+  height: 4rem;
   background-color: rgba(255, 255, 255, 0.8); }
 
 aside {
@@ -121,6 +115,9 @@ aside {
   height: 100%;
   display: flex;
   justify-content: center;
+  border: 2px;
+  border-color: rgba(200, 200, 200, 0.5);
+  border-style: solid;
   flex-wrap: wrap;
   justify-content: center;
   align-content: space-around; }
