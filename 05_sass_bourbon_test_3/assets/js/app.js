@@ -2,17 +2,17 @@
 // ANIMATED NAV & COUNTER
 //------------------------------------
 
-// Shrink meny on scroll down
-// $(document).on ('scroll', function(){
-//   if ($(document).scrollTop() > 100)
-//   {
-//     $('header').addClass('shrink');
-//   }
-//   else
-//   {
-//     $('header').removeClass('shrink');
-//   }
-// });
+Shrink meny on scroll down
+$(document).on ('scroll', function(){
+  if ($(document).scrollTop() > 100)
+  {
+    $('header').addClass('shrink');
+  }
+  else
+  {
+    $('header').removeClass('shrink');
+  }
+});
 
 // Shift Counter up when the page goes to the bottom
 // $(window).scroll(function() {
@@ -40,7 +40,7 @@ var scrolling = function(){
   } else {
     $(function(){
       $.scrollify({
-        section:".section-VF",
+        section:".section-VH",
         scrollbars:false,
         interstitialSection : "footer",
 
@@ -70,9 +70,9 @@ var scrolling = function(){
 
 $(function(){
   $.scrollify({
-    section:".section-VF",
-    scrollbars:false,
+    section:".section-VH",
     interstitialSection : "footer",
+
 
     before: function(i) {
       console.log(i);
@@ -89,9 +89,7 @@ $(function(){
         $('header').addClass('shrink');
       };
     },
-    after: function(i) {
-//      $('.counter-num').html((i+1) + ' of 5');
-    }
+    after: function(i) {}
   })
 });
 

@@ -35,10 +35,8 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-*::after {
-  clear: both;
-  content: "";
-  display: block; }
+.section-VH {
+  height: 1000px; }
 
 .one-col-grid-head {
   width: calc(100% - 40px);
@@ -72,6 +70,17 @@ table {
       width: calc(100% - 6rem);
       float: left;
       margin-left: 3rem; } }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0; }
+
+body {
+  background-image: repeating-linear-gradient(to right, transparent, transparent 20px, rgba(0, 212, 255, 0.25) 20px, rgba(0, 212, 255, 0.25) calc(8.3333333333% - 21.6666666667px + 20px)); }
 
 footer {
   height: 6rem;

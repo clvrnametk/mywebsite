@@ -10,9 +10,7 @@
 @import "./libraries/_reset.scss";
 
 
-* {
-  @include grid-container;
-}
+
 
 //------------------------------------
 // GLOBAL: Breakpoints
@@ -44,10 +42,11 @@ $grid-480: (
 //------------------------------------
 
 
-// 100VF CLASS
-.section-VF {
+// 100VH CLASS
+.section-VH {
   // This is being handeled by scrollify, footer breaks otherwise.
   //height: 100vh;
+  height: 1000px;
 }
 
 // Grid Styles
@@ -79,6 +78,18 @@ $grid-480: (
 }
 
 
+// .section-VH {
+//   @include grid-container;
+// }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 
 
 //------------------------------------
@@ -86,7 +97,7 @@ $grid-480: (
 //------------------------------------
 
 body {
-//  @include grid-visual();
+  @include grid-visual();
 }
 
 .viewport-parent {
