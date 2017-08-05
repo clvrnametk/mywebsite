@@ -34,11 +34,11 @@ header {
   justify-content: space-between;
   align-items: center;
   // Global Transitioning
-  transition: all 0.3s ease-out;
+  transition: all 0.2s ease-out;
   // Nav Item: Positioning
     img {
       // Transisiton
-      transition: all 0.3s ease;
+      transition: all 0.2s ease;
     }
     li {
       display: inline;
@@ -63,6 +63,17 @@ header {
       padding-bottom: .625rem;
       pointer-events: none;
       cursor: default;
+    }
+}
+
+header.shrink:hover {
+  height: 7.5rem;
+  background-color: rgba(0,0,0,.2);
+    img {
+      transform: scale(1);
+    }
+    li {
+      font-size: 18px;
     }
 }
 

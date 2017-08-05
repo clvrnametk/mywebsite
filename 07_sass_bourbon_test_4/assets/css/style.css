@@ -246,9 +246,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  transition: all 0.3s ease-out; }
+  transition: all 0.2s ease-out; }
   header img {
-    transition: all 0.3s ease; }
+    transition: all 0.2s ease; }
   header li {
     display: inline;
     padding: 1rem; }
@@ -266,6 +266,14 @@ header {
     padding-bottom: .625rem;
     pointer-events: none;
     cursor: default; }
+
+header.shrink:hover {
+  height: 7.5rem;
+  background-color: rgba(0, 0, 0, 0.2); }
+  header.shrink:hover img {
+    transform: scale(1); }
+  header.shrink:hover li {
+    font-size: 18px; }
 
 .dark-nav {
   text-decoration: none;
