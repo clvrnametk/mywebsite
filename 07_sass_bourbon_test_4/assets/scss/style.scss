@@ -9,10 +9,13 @@
 // Partials
 @import "./partials/_reset.scss";
 @import "./partials/typography.scss";
+@import "./partials/animation.scss";
+
+
 
 
 //------------------------------------
-// GLOBAL Styling
+// GLOBAL: Header
 //------------------------------------
 
 header {
@@ -48,14 +51,35 @@ header {
       padding-bottom: 1.5rem;
       border-bottom: .125rem solid rgba(255, 255, 255, 0);
       // Transisiton
-      transition: all 0.3s ease;
+      transition: all 0.2s ease;
     }
     // Nav Item: Hover Transitions
     li a:hover {
       border-bottom: .125rem solid rgba(255, 255, 255, 1.0);
-      padding-bottom: .75rem;
+      padding-bottom: .625rem;
+    }
+    .current-page {
+      border-bottom: .125rem solid rgba(255, 255, 255, 1.0);
+      padding-bottom: .625rem;
+      pointer-events: none;
+      cursor: default;
     }
 }
+
+// Alternate Dark Navigation
+.dark-nav {
+  text-decoration: none;
+  color: inherit;
+  padding-bottom: 1.5rem;
+  border-bottom: .125rem solid rgba(0, 0, 0, 0);
+  // Transisiton
+  transition: all 0.2s ease;
+}
+.dark-nav:hover {
+  border-bottom: .125rem solid rgba(0, 0, 0, .4);
+  padding-bottom: .625rem;
+}
+
 
 // Animation class for navigation
 .shrink {
@@ -69,6 +93,11 @@ header {
     }
 }
 
+
+
+//------------------------------------
+// GLOBAL: Counter
+//------------------------------------
 
 aside {
   width: 4.25rem;
@@ -102,6 +131,11 @@ aside {
 }
 
 
+
+//------------------------------------
+// GLOBAL: Counter
+//------------------------------------
+
 footer {
   height: 6rem;
   width: 100%;
@@ -131,6 +165,11 @@ footer {
 }
 
 
+
+//------------------------------------
+// GLOBAL: Section Styles
+//------------------------------------
+
 .section-VH {
   min-height: 100vh;
 }
@@ -149,15 +188,21 @@ footer {
   align-items: center;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
 .hero-content {
   width: 50%;
     h1 {
       text-align: center;
       margin-bottom: 2rem;
+      cursor: default;
     }
     p {
       text-align: center;
       margin-bottom: 1rem;
+      cursor: default;
     }
 }
 
@@ -166,7 +211,8 @@ footer {
   bottom: 3rem;
 }
 
-a.bottom-center {
+// GLOBAL button Style
+.global-btn {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 22rem;
@@ -176,13 +222,18 @@ a.bottom-center {
 
   text-align: center;
   text-decoration: none;
+
+  transition: all .2s ease;
+}
+
+.global-btn:hover {
+  background-color: rgba(#007083, 0.8);
 }
 
 
 //------------------------------------
 // HOME PAGE
 //------------------------------------
-
 
 .home-hero {
   background-color: rgba(80, 10, 180, 0.7);
@@ -212,3 +263,197 @@ a.bottom-center {
   background-color: rgba(180, 20, 180, 0.5);
   position: relative;
 }
+
+
+
+//------------------------------------
+// ABOUT PAGE
+//------------------------------------
+
+
+// Hero Section
+.about-hero {
+  background-color: rgba(80, 10, 180, 0.5);
+  position: relative;
+}
+
+
+// Journey Section
+.about-journey {
+  background-color: rgba(30, 85, 10, 0.5);
+  position: relative;
+}
+
+.inner-flex-wrap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.flex-center-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding-outside {
+  box-sizing: border-box;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.journey-txt {
+  margin-bottom: 3.75rem;
+    h2 {
+      margin-bottom: 1rem;
+    }
+}
+
+.max-width-1024 {
+  max-width: 80rem;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.width-50 {
+  width: 50%;
+}
+
+// .header-outer {
+//   width: 100%;
+// }
+
+.width-33-3 {
+  width: 33.3%;
+  align-self: flex-start;
+    img {
+      width: 100%;
+      margin-bottom: .5rem;
+    }
+    p {
+      text-align: center;
+    }
+}
+
+.process-img-center {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  padding-left: 1rem;
+  padding-right: 1rem;
+    p {
+      width: 100%;
+      margin-bottom: .25rem;
+    }
+}
+
+.process-img {
+  max-width: 16rem;
+  padding-bottom: 1.5rem;
+}
+
+
+// Fav Section
+.about-fav {
+  background-color: rgba(8, 10, 200, 0.5);
+  position: relative;
+}
+
+.fav-txt {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  box-sizing: border-box;
+}
+
+.process-h2 {
+  margin-bottom: 1rem;
+}
+
+.fav-group {
+  padding-top: 6rem;
+}
+.fav-img-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+    .fav-img {
+      width: 100%;
+      max-width: 13rem;
+      margin-bottom: 3rem;
+    }
+    p {
+      width: 100%;
+      max-width: 20rem;
+      box-sizing: border-box;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+}
+
+
+
+//------------------------------------
+// LEADERSHIP PAGE
+//------------------------------------
+
+// Hero Section
+.leader-hero {
+  background-color: rgba(80, 10, 180, 0.5);
+  position: relative;
+}
+
+.leader-exec {
+  background-color: rgba(30, 85, 10, 0.5);
+  position: relative;
+}
+
+.leader-teach {
+  background-color: rgba(8, 10, 200, 0.5);
+  position: relative;
+}
+
+.leader-num {
+  background-color: rgba(34, 125, 80, 0.5);
+  position: relative;
+}
+
+
+
+//------------------------------------
+// PROCESS PAGE
+//------------------------------------
+
+// Hero Section
+.process-hero {
+  background-color: rgba(80, 10, 180, 0.5);
+  position: relative;
+}
+
+.process-steps {
+  background-color: rgba(30, 85, 10, 0.5);
+  position: relative;
+}
+
+.process-num {
+  background-color: rgba(34, 125, 80, 0.5);
+  position: relative;
+}
+
+.process-skills {
+  background-color: rgba(8, 10, 200, 0.5);
+  position: relative;
+}
+
+.skills-list {
+  list-style-type: square;
+  list-style-position: inside;
+}
+
+
+//------------------------------------
+// PROCESS PAGE
+//------------------------------------

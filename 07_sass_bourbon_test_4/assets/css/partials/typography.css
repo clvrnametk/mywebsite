@@ -36,7 +36,7 @@
 .A01-h-3 {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 500;
   line-height: 1.33;
   text-align: center;
   color: #484848; }
@@ -84,6 +84,13 @@
   font-size: 18px;
   font-weight: 600;
   line-height: 1.33;
+  color: #484848; }
+
+.A03-p-small-head {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.71;
   color: #484848; }
 
 .A04-p-center-white {
