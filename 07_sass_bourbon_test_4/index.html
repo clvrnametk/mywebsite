@@ -81,14 +81,32 @@
 
     <!-- GLOBAL: Navigation -->
     <header class="navigation">
-      <a href="./index.html"><img src="./img/mm_icon_white.svg" alt="Mike Morales Icon"></a>
-      <ul class="">
+      <a href="./index.html"><img class="mm-logo" src="./img/mm_icon_white.svg" alt="Mike Morales Icon"></a>
+      <ul class="nav-list">
         <li class="A04-p-center-white"><a class="" href="./about.html">About Me</a></li>
         <li class="A04-p-center-white"><a class="" href="./leadership.html">Leadership</a></li>
         <li class="A04-p-center-white"><a class="" href="./my-process.html">My Process</a></li>
         <li class="A04-p-center-white"><a class="" href="./my-projects.html">My Projects</a></li>
       </ul>
+      <img class="nav-hamburger" src="./img/nav_hamburger.svg" alt="">
     </header>
+
+
+    <!-- TEST BOURBON MENU -->
+    <!-- <button type="button" class="js-menu-trigger sliding-panel-button">
+      Click for Sliding Panel
+    </button>
+
+    <nav class="js-menu sliding-panel-content">
+      <ul>
+        <li><a href="javascript:void(0)">Item 1</a></li>
+        <li><a href="javascript:void(0)">Item 2</a></li>
+        <li><a href="javascript:void(0)">Item 3</a></li>
+      </ul>
+    </nav>
+
+    <div class="js-menu-screen sliding-panel-fade-screen"></div> -->
+
 
 
     <!-- GLOBAL: Fixed Counter -->
@@ -96,8 +114,10 @@
       <p class="counter-num">1 of 5</p>
     </aside>
 
+
       <!-- Hero Section -->
       <section class="section-VH parent-felx home-hero">
+
         <div class="inner-flex">
           <div class="hero-content">
             <h1 class="A01-h-1-white">
@@ -112,6 +132,13 @@
           </div>
         </div>
         <img class="bottom-center down-arrow" src="./img/down_arrow.svg" alt="Scroll Down">
+        <!-- Bring Back Video Later -->
+        <!-- <video
+          class="fullscreen"
+          src="./img/bg_video_13s.m4v"
+          poster=""
+          autoplay
+        /> -->
       </section>
 
       <!-- Leader Section -->
@@ -126,13 +153,13 @@
             </p>
           </div>
         </div>
-        <a href="./leadership.html#1" class="bottom-center global-btn A04-p-center-white">
+        <a href="./leadership.html#1" class="bottom-center global-btn A04-button-white">
           Show me more
         </a>
       </section>
 
       <!-- Designer Section -->
-      <section class="section-VH parent-felx home-designer">
+      <section class="section-VH parent-felx home-process">
         <div class="inner-flex">
           <div class="hero-content">
             <h1 class="A01-h-1">
@@ -143,7 +170,7 @@
             </p>
           </div>
         </div>
-        <a href="./leadership.html" class="bottom-center global-btn A04-p-center-white">
+        <a href="./leadership.html" class="bottom-center global-btn A04-button-white">
           Show me more
         </a>
       </section>
@@ -160,7 +187,7 @@
             </p>
           </div>
         </div>
-        <a href="./my-process.html" class="bottom-center global-btn A04-p-center-white">
+        <a href="./my-process.html" class="bottom-center global-btn A04-button-white">
           Show me more
         </a>
       </section>
@@ -177,36 +204,41 @@
             </p>
           </div>
         </div>
-        <a href="mailto:mike.morales.ny@gmail.com?Subject=Lets%20boulder" class="bottom-center global-btn A04-p-center-white">
+        <a href="mailto:mike.morales.ny@gmail.com?Subject=Lets%20boulder" class="bottom-center global-btn A04-button-white">
           I want to Boulder
         </a>
       </section>
 
+
+
       <!-- GLOBAL: Footer -->
       <footer>
-        <div class="">
-          <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank">
+        <div class="contact-info">
+          <a class="" href="https://www.linkedin.com/in/michaelmorales1/" target="_blank">
             <img src="./img/footer_linkedin.svg" alt="LinkedIn Icon">
           </a>
-          <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank">
+          <a class="contact-txt" href="https://www.linkedin.com/in/michaelmorales1/" target="_blank">
             <p class="A05-footer-1">@mikemorales1</p>
           </a>
-
 
           <a href="mailto:mike.morales.ny@gmail.com?Subject=Hello!">
             <img src="./img/footer_mail.svg" alt="Email Icon">
           </a>
           <a href="mailto:mike.morales.ny@gmail.com?Subject=Hello!">
-            <p class="A05-footer-1">mike.morales.ny@gmail.com</p>
+            <p class="contact-txt A05-footer-1">mike.morales.ny@gmail.com</p>
           </a>
         </div>
 
-        <div class="">
-          <img src="./img/footer_steal.svg" alt="No Stealing Icon">
-          <p class="A05-footer-2">Stealing is lame. &#169; 2017 Michael Morales all rights reserved. </p>
+        <div class="no-stealing">
+          <img class="no-stealing" src="./img/footer_steal.svg" alt="No Stealing Icon">
+          <p class="A05-footer-2 no-stealing">Stealing is lame. &#169; 2017 Michael Morales all rights reserved. </p>
         </div>
 
+        <div class="no-stealing-short">
+          <img class="no-stealing-short" src="./img/footer_steal.svg" alt="No Stealing Icon">
+        </div>
       </footer>
+
 
 
       <!-- JS Imports -->

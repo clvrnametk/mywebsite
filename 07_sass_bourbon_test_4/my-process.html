@@ -80,13 +80,14 @@
 
     <!-- GLOBAL: Navigation -->
     <header class="navigation">
-      <a href="./index.html"><img src="./img/mm_icon_white.svg" alt="Mike Morales Icon"></a>
-      <ul class="">
+      <a href="./index.html"><img class="mm-logo" src="./img/mm_icon_white.svg" alt="Mike Morales Icon"></a>
+      <ul class="nav-list">
         <li class="A04-p-center-white"><a class="" href="./about.html">About Me</a></li>
         <li class="A04-p-center-white"><a class="" href="./leadership.html">Leadership</a></li>
         <li class="A04-p-center-white"><a class="current-page" href="./my-process.html">My Process</a></li>
         <li class="A04-p-center-white"><a class="" href="./my-projects.html">My Projects</a></li>
       </ul>
+      <img class="nav-hamburger" src="./img/nav_hamburger.svg" alt="">
     </header>
 
     <!-- GLOBAL: Fixed Counter -->
@@ -96,7 +97,7 @@
 
 
     <!-- Hero Section -->
-    <section class="section-VH parent-felx about-hero">
+    <section class="section-VH parent-felx process-hero">
       <div class="inner-flex">
         <div class="hero-content">
           <h1 class="A01-h-1">
@@ -124,7 +125,7 @@
           </div>
         </div>
 
-        <div class="width-100 flex-center-all padding-outside">
+        <div class="process-3up flex-center-all padding-outside">
           <div class="width-33-3 process-img-center">
             <img class="process-img" src="./img/process_1.svg" alt="Desinger Illustration">
             <p class="A01-h-3">
@@ -138,7 +139,7 @@
           <div class="width-33-3 process-img-center">
             <img class="process-img" src="./img/process_2.svg" alt="Team Builder Illustration">
             <p class="A01-h-3">
-              TEAM BUILDER
+              EXPLORE
             </p>
             <p class="A04-p-center">
               Ideate, Evaluate, Prototype
@@ -148,7 +149,7 @@
           <div class="width-33-3 process-img-center">
             <img class="process-img" src="./img/process_3.svg" alt="Teacher Illustration">
             <p class="A01-h-3">
-              TEACHER
+              MATERIALIZE
             </p>
             <p class="A04-p-center">
               Test, Validate, Implement
@@ -156,7 +157,7 @@
           </div>
         </div>
       </div>
-      <a href="./my-projects.html" class="bottom-center global-btn A04-p-center-white">
+      <a href="./my-projects.html" class="bottom-center global-btn A04-button-white">
         Show me more
       </a>
 
@@ -166,7 +167,7 @@
 
     <!-- Numbers Section -->
     <section class="section-VH parent-felx process-num">
-      <div class="inner-flex-wrap max-width-1024">
+      <div class="design-num-parent">
 
         <div class="width-100 flex-center-all fav-txt">
           <div class="width-50">
@@ -177,8 +178,8 @@
         </div>
 
 
-        <div class="width-100 flex-center-all padding-outside fav-group">
-          <div class="width-33-3 fav-img-container">
+        <div class="design-num">
+          <div class="design-num-container">
             <p class="A01-h-1">
               18,654
             </p>
@@ -187,7 +188,7 @@
             </p>
           </div>
 
-          <div class="width-33-3 fav-img-container">
+          <div class="design-num-container">
             <p class="A01-h-1">
               6,630
             </p>
@@ -196,7 +197,7 @@
             </p>
           </div>
 
-          <div class="width-33-3 fav-img-container">
+          <div class="design-num-container">
             <p class="A01-h-1">
               15
             </p>
@@ -204,10 +205,8 @@
               Digital Products
             </p>
           </div>
-        </div>
 
-        <div class="width-100 flex-center-all padding-outside fav-group">
-          <div class="width-33-3 fav-img-container">
+          <div class="design-num-container">
             <p class="A01-h-1">
               1 Trillion
             </p>
@@ -216,7 +215,7 @@
             </p>
           </div>
 
-          <div class="width-33-3 fav-img-container">
+          <div class="design-num-container">
             <p class="A01-h-1">
               234K+
             </p>
@@ -225,7 +224,7 @@
             </p>
           </div>
 
-          <div class="width-33-3 fav-img-container">
+          <div class="design-num-container">
             <p class="A01-h-1">
               5
             </p>
@@ -250,9 +249,9 @@
           </div>
         </div>
 
-        <div class="width-100 flex-center-all padding-outside">
-          <div class="width-33-3 flex-center-all">
-            <div class="">
+        <div class="width-100 flex-center-all padding-outside skills-list-parent">
+          <div class="width-33-3 flex-center-all skills-list-parent">
+            <div class="skill-group">
               <span class="A01-h-3 skills-header">
                 UNDERSTAND
               </span>
@@ -265,8 +264,8 @@
             </div>
           </div>
 
-          <div class="width-33-3 flex-center-all">
-            <div class="">
+          <div class="width-33-3 flex-center-all skills-list-parent">
+            <div class="skill-group">
               <span class="A01-h-3 skills-header">
                 EXPLORE
               </span>
@@ -279,8 +278,8 @@
             </div>
           </div>
 
-          <div class="width-33-3 flex-center-all">
-            <div class="">
+          <div class="width-33-3 flex-center-all skills-list-parent">
+            <div class="skill-group">
               <span class="A01-h-3 skills-header">
                 MATERIALIZE
               </span>
@@ -299,31 +298,35 @@
     </section>
 
 
+
     <!-- GLOBAL: Footer -->
     <footer>
-      <div class="">
-        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank">
+      <div class="contact-info">
+        <a class="" href="https://www.linkedin.com/in/michaelmorales1/" target="_blank">
           <img src="./img/footer_linkedin.svg" alt="LinkedIn Icon">
         </a>
-        <a href="https://www.linkedin.com/in/michaelmorales1/" target="_blank">
+        <a class="contact-txt" href="https://www.linkedin.com/in/michaelmorales1/" target="_blank">
           <p class="A05-footer-1">@mikemorales1</p>
         </a>
-
 
         <a href="mailto:mike.morales.ny@gmail.com?Subject=Hello!">
           <img src="./img/footer_mail.svg" alt="Email Icon">
         </a>
         <a href="mailto:mike.morales.ny@gmail.com?Subject=Hello!">
-          <p class="A05-footer-1">mike.morales.ny@gmail.com</p>
+          <p class="contact-txt A05-footer-1">mike.morales.ny@gmail.com</p>
         </a>
       </div>
 
-      <div class="">
-        <img src="./img/footer_steal.svg" alt="No Stealing Icon">
-        <p class="A05-footer-2">Stealing is lame. &#169; 2017 Michael Morales all rights reserved. </p>
+      <div class="no-stealing">
+        <img class="no-stealing" src="./img/footer_steal.svg" alt="No Stealing Icon">
+        <p class="A05-footer-2 no-stealing">Stealing is lame. &#169; 2017 Michael Morales all rights reserved. </p>
       </div>
 
+      <div class="no-stealing-short">
+        <img class="no-stealing-short" src="./img/footer_steal.svg" alt="No Stealing Icon">
+      </div>
     </footer>
+
 
 
     <!-- JS Imports -->

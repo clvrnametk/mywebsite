@@ -1,4 +1,4 @@
-.home-hero h1, .home-hero p, .home-hero img {
+.home-hero h1, .home-hero p, .leader-hero h1, .leader-hero p, .about-hero h1, .about-hero p, .process-hero h1, .process-hero p {
   -webkit-animation: fadein 2s, moved 2s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 2s, moved 2s;

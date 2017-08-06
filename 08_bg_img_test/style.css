@@ -1,0 +1,22 @@
+body {
+  background-color: lightgrey;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+}
+
+.add-bg-image {
+  background-color: blue;
+  margin-left: 0;
+  height: 500px;
+
+  background-image: url('hero_leader.jpg');
+  -webkit-background-size:cover;
+     -moz-background-size:cover;
+       -o-background-size:cover;
+          background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

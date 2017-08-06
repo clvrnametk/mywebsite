@@ -43,15 +43,23 @@ $(function() {
 
 });
 
+// TEST BOURBON MENU
+// $(document).ready(function(){
+//   $('.sliding-panel-button,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
+//     $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
+//     e.preventDefault();
+//   });
+// });
 
-//Shrink meny on scroll down
-$(document).on ('scroll', function(){
-  if ($(document).scrollTop() > 100)
-  {
-    $('header').addClass('shrink');
-  }
-  else
-  {
-    $('header').removeClass('shrink');
-  }
-});
+
+// //Shrink meny on scroll down
+// $(document).on ('scroll', function(){
+//   if ($(document).scrollTop() > 100)
+//   {
+//     $('header').addClass('shrink');
+//   }
+//   else
+//   {
+//     $('header').removeClass('shrink');
+//   }
+// });

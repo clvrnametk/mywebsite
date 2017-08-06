@@ -2,8 +2,8 @@
 // TRANSITION TEST
 //------------------------------------
 
-.home-hero{
-    h1, p, img {
+.home-hero, .leader-hero, .about-hero, .process-hero{
+    h1, p {
       -webkit-animation: fadein 2s, moved 2s; /* Safari, Chrome and Opera > 12.1 */
          -moz-animation: fadein 2s, moved 2s; /* Firefox < 16 */
           -ms-animation: fadein 2s, moved 2s; /* Internet Explorer */

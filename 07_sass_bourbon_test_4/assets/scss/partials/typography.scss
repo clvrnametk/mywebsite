@@ -1,10 +1,11 @@
 /* Google Font Import */
-@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
 
 // Font Variables
 $roboto: 'Roboto', sans-serif;
 
 // Color Variables
+$white: #ffffff;
 $pale-teal: #7dcbc4;
 $charcoal-grey: #36474f;
 $dark: #161f24;
@@ -17,7 +18,6 @@ $bluey-grey: #8fa4af;
 $light-teal: #84dbb9;
 $dodger-blue: #33b8f8;
 $cornflower-blue: #537cd7;
-$white: #ffffff;
 $pinky-purple: #b048c1;
 $orangey-red: #f7412d;
 $blue-grey: #5f7d8c;
@@ -27,7 +27,7 @@ $blue-green: #19a69a;
 
 .A01-h-1-white {
 	font-family: $roboto;
-	font-size: 48px;
+	font-size: 3rem;
 	font-weight: bold;
 	line-height: 1.0;
 	text-align: center;
@@ -36,7 +36,7 @@ $blue-green: #19a69a;
 
 .A01-h-1 {
 	font-family: $roboto;
-	font-size: 48px;
+	font-size: 3rem;
 	font-weight: bold;
 	line-height: 1.0;
 	text-align: center;
@@ -45,7 +45,7 @@ $blue-green: #19a69a;
 
 .A01-h-1-480 {
 	font-family: $roboto;
-	font-size: 40px;
+	font-size: 2.5rem;
 	font-weight: bold;
 	line-height: 1.2;
 	text-align: center;
@@ -54,7 +54,7 @@ $blue-green: #19a69a;
 
 .A01-h-2 {
 	font-family: $roboto;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 500;
 	line-height: 1.0;
 	text-align: center;
@@ -63,7 +63,7 @@ $blue-green: #19a69a;
 
 .A01-h-3 {
 	font-family: $roboto;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 500;
 	line-height: 1.33;
 	text-align: center;
@@ -72,15 +72,15 @@ $blue-green: #19a69a;
 
 .A02-h-subhead-body-white {
 	font-family: $roboto;
-	font-size: 24px;
-	font-weight: 300;
+	font-size: 1.5rem;
+	font-weight: 100;
 	line-height: 1.5;
 	text-align: center;
 	color: $white;
 }
 .A02-h-subhead-body {
 	font-family: $roboto;
-	font-size: 24px;
+	font-size: 1.5rem;
 	font-weight: 300;
 	line-height: 1.5;
 	text-align: center;
@@ -89,7 +89,7 @@ $blue-green: #19a69a;
 
 .A02-h-subhead-body-480 {
 	font-family: $roboto;
-	font-size: 18px;
+	font-size: 1.125rem;
 	line-height: 1.56;
 	text-align: center;
 	color: #484848;
@@ -97,7 +97,7 @@ $blue-green: #19a69a;
 
 .A02-h-subhead-body-480 {
 	font-family: $roboto;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.75;
 	text-align: center;
@@ -106,7 +106,7 @@ $blue-green: #19a69a;
 
 .A03-p-ul-head {
 	font-family: $roboto;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: bold;
 	line-height: 2.22;
 	color: #484848;
@@ -114,32 +114,43 @@ $blue-green: #19a69a;
 
 .A03-p-head {
 	font-family: $roboto;
-	font-size: 18px;
-	font-weight: 600;
+	font-size: 1.125rem;
+	font-weight: 500;
 	line-height: 1.33;
 	color: #484848;
 }
 
 .A03-p-small-head {
 	font-family: $roboto;
-	font-size: 14px;
-	font-weight: 600;
+	font-size: .875rem;
+	font-weight: 500;
 	line-height: 1.71;
 	color: #484848;
 }
 
 .A04-p-center-white {
 	font-family: $roboto;
-	font-size: 18px;
+	font-size: 1.125rem;
 	font-weight: 300;
 	line-height: 1.56;
 	//text-align: center;
 	color: $white;
 }
 
+.A04-button-white {
+	font-family: $roboto;
+	font-size: 1.125rem;
+	font-weight: 200;
+	line-height: 1.56;
+	//text-align: center;
+	color: $white;
+}
+
+
 .A04-p-center {
 	font-family: $roboto;
-	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 300;
 	line-height: 1.33;
 	text-align: center;
 	color: #484848;
@@ -147,21 +158,22 @@ $blue-green: #19a69a;
 
 .A04-p-li-text {
 	font-family: $roboto;
-	font-size: 18px;
+	font-size: 1.125rem;
 	line-height: 2.22;
 	color: #484848;
 }
 
 .A04-p {
 	font-family: $roboto;
-	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: 300;
 	line-height: 1.33;
 	color: #484848;
 }
 
 .A05-footer-1 {
 	font-family: $roboto;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 300;
 	line-height: 1.5;
 	color: #979797;
@@ -170,7 +182,7 @@ $blue-green: #19a69a;
 
 .A05-footer-2 {
 	font-family: $roboto;
-	font-size: 14px;
+	font-size: .875rem;
 	font-weight: 300;
 	line-height: 1.71;
 	text-align: right;
@@ -179,7 +191,7 @@ $blue-green: #19a69a;
 
 .A06-navigation-grey {
 	font-family: $roboto;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.75;
 	color: #979797;
@@ -187,8 +199,53 @@ $blue-green: #19a69a;
 
 .A06-navigation-white {
 	font-family: $roboto;
-	font-size: 16px;
+	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.75;
 	color: $white;
+}
+
+
+
+
+
+
+//******************************************
+// LAYOUT: 480px Breakppoint
+//******************************************
+@media screen and (max-width: 35rem) {
+
+	.A01-h-1 {
+		font-family: $roboto;
+		font-size: 2.5rem;
+		font-weight: bold;
+		line-height: 1.1;
+		text-align: center;
+		color: #484848;
+	}
+
+	.A01-h-1-white {
+		font-family: $roboto;
+		font-size: 2.5rem;
+		font-weight: bold;
+		line-height: 1.1;
+		text-align: center;
+		color: $white;
+	}
+
+	.A02-h-subhead-body {
+		font-family: $roboto;
+		font-size: 1.25rem;
+		// line-height: 1.56;
+		text-align: center;
+		color: #484848;
+	}
+
+	.A02-h-subhead-body-white {
+		font-family: $roboto;
+		font-size: 1.25rem;
+		// line-height: 1.56;
+		text-align: center;
+		color: $white;
+	}
 }
