@@ -1,13 +1,13 @@
-.home-hero h1, .home-hero p, .leader-hero h1, .leader-hero p, .about-hero h1, .about-hero p, .process-hero h1, .process-hero p {
-  -webkit-animation: fadein 2s, moved 2s;
+.home-hero .letter-img, .home-hero h1, .home-hero p, .leadership-hero .letter-img, .leadership-hero h1, .leadership-hero p, .about-hero .letter-img, .about-hero h1, .about-hero p, .process-hero .letter-img, .process-hero h1, .process-hero p {
+  -webkit-animation: fadein 1.2s, moved 2s;
   /* Safari, Chrome and Opera > 12.1 */
-  -moz-animation: fadein 2s, moved 2s;
+  -moz-animation: fadein 1.2s, moved 2s;
   /* Firefox < 16 */
-  -ms-animation: fadein 2s, moved 2s;
+  -ms-animation: fadein 1.2s, moved 2s;
   /* Internet Explorer */
-  -o-animation: fadein 2s, moved 2s;
+  -o-animation: fadein 1.2s, moved 2s;
   /* Opera < 12.1 */
-  animation: fadein 2s, moved 2s;
+  animation: fadein 1.2s, moved 2s;
   /* Firefox < 16 */
   /* Safari, Chrome and Opera > 12.1 */ }
 @keyframes fadein {
