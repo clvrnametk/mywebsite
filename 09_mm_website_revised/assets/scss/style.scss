@@ -1,0 +1,383 @@
+//------------------------------------
+// IMPORTS
+//------------------------------------
+
+// Modules and Variables -or- Libraries
+@import "./libraries/bourbon/bourbon.scss";
+@import "./libraries/neat/neat.scss";
+
+// Partials
+// @import "./partials/_reset.scss";
+@import "./partials/_reset.scss";
+@import "./partials/typography.scss";
+@import "./partials/animation.scss";
+
+
+
+//------------------------------------
+// GLOBAL: Section Styles
+//------------------------------------
+
+.main-purple-bg {
+  background-color: $main-purple;
+  color: white;
+}
+
+.section-VH {
+  min-height: 100vh;
+}
+
+.parent-felx {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.inner-flex {
+  width: 100%;
+
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-wrap {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+}
+
+.bottom-center {
+  position: absolute;
+  bottom: 3rem;
+  // Safari fix
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+//------------------------------------
+// GLOBAL: Nav
+//------------------------------------
+.nav-hamburger {
+  display: none;
+}
+
+header {
+  // Size
+  width: 100%;
+  height: 7.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  box-sizing: border-box;
+  // Positioning
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  // Flexbox
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+  justify-content: space-between;
+  align-items: center;
+  // Global Transitioning
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  -o-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+
+  // Nav Item: Positioning
+    .mm-logo {
+      // Transisiton
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+    li {
+      display: inline;
+      padding: 1rem;
+    }
+    // Nav Item: Styling
+    li a {
+      text-decoration: none;
+      color: inherit;
+      padding-bottom: 1.5rem;
+      border-bottom: .125rem solid rgba(255, 255, 255, 0);
+      // Transisiton
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+    // Nav Item: Hover Transitions
+    li a:hover {
+      border-bottom: .125rem solid rgba(255, 255, 255, 1.0);
+      padding-bottom: .625rem;
+    }
+    .current-page {
+      border-bottom: .125rem solid rgba(255, 255, 255, 1.0);
+      padding-bottom: .625rem;
+      pointer-events: none;
+      cursor: default;
+    }
+}
+
+//--------------------------
+// GLOBAL: Nav Hover States
+//--------------------------
+header.shrink:hover {
+  height: 7.5rem;
+  background-color: rgba(17, 16, 47, 0.2);
+    .mm-logo {
+      -webkit-transform: scale(1); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: scale(1); /* IE 9 */
+              transform: scale(1); /* IE 10, Fx 16+, Op 12.1+ */
+    }
+    li {
+      font-size: 18px;
+    }
+}
+
+header.shrink.shrink-alt:hover {
+  height: 7.5rem;
+  background-color: rgba(17, 16, 47, 1.0);
+    .mm-logo {
+      -webkit-transform: scale(1); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: scale(1); /* IE 9 */
+              transform: scale(1); /* IE 10, Fx 16+, Op 12.1+ */
+    }
+    li {
+      font-size: 18px;
+    }
+    .dark-nav {
+      border-bottom: .125rem solid rgba(255, 255, 255, 0);
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .dark-nav:hover {
+      border-bottom: .125rem solid rgba(255, 255, 255, 1.0);
+    }
+    .dark-current-page {
+      border-bottom: .125rem solid rgba(255, 255, 255, 0.8);
+    }
+}
+
+.dark-nav:hover {
+  border-bottom: .125rem solid rgba(0, 0, 0, 0.4);
+  padding-bottom: .625rem;
+}
+
+// NAV CURRENT PAGE DISABLE
+.dark-current-page {
+  border-bottom: .125rem solid rgba(0, 0, 0, 0.4);
+  padding-bottom: .625rem;
+  pointer-events: none;
+  cursor: default;
+}
+
+// Animation class for navigation
+.shrink {
+  height: 4rem;
+  background-color: rgba(17, 16, 47, 0.2);
+    .mm-logo {
+      -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: scale(.75); /* IE 9 */
+              transform: scale(.75); /* IE 10, Fx 16+, Op 12.1+ */
+    }
+    li {
+      font-size: 1rem;
+    }
+}
+
+.shrink-alt {
+  background-color: rgba(17, 16, 47, 0.2);
+    a {
+      color: rgba(255, 255, 255, 0.8)
+    }
+    .dark-current-page {
+      border-bottom: .125rem solid rgba(255, 255, 255, 0.8);
+    }
+}
+
+//--------------------------
+// GLOBAL: Btn Style
+//--------------------------
+.glabl-btn {
+  height: 3rem;
+  width: 15.625rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: #9D9CE2;
+    a {
+      text-decoration: none;
+    }
+}
+
+.glabl-btn-w {
+  border-color: white;
+}
+
+
+.global-btn {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  // Not sure why this doesn't work
+  // width: 400px;
+
+  border-top: 1px;
+  border-bottom: 1px;
+  border-left: 1px;
+  border-right: 1px;
+  border-style: solid;
+  border-color: #9D9CE2;
+
+  text-align: center;
+  text-decoration: none;
+
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.global-btn:hover {
+  background-color: rgba(#9D9CE2, 1.0);
+  color: white;
+}
+
+
+//------------------------------------
+// GLOBAL: Footer
+//------------------------------------
+
+footer {
+  height: 6rem;
+  width: 100%;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  background-color: #11102F;
+  box-sizing: border-box;
+
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+  justify-content: space-between;
+  align-items: center;
+
+    div {
+      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;  /* TWEENER - IE 10 */
+      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+      display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+      align-items: center;
+      box-sizing: border-box;
+      img {
+        margin-right: .75rem;
+      }
+      a {
+        text-decoration: none;
+      }
+      p.d-g-footer-p-l {
+        margin-right: 2rem;
+      }
+    }
+}
+
+
+//------------------------------------
+// HOME: Hero Section Styles
+//------------------------------------
+
+// Section: Hero
+.home-hero {
+  background-color: #582694;
+  position: relative;
+}
+
+.hero-content {
+  max-width: 46.625rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+    h1, p {
+      padding-bottom: 2rem;
+    }
+}
+
+.down-arrow {
+  cursor: pointer;
+  width: 4.25rem;
+}
+
+// Section: Leadership
+.leadership-content {
+    max-width: 71.25rem;
+    justify-content: flex-start;
+      img {
+        max-width: 20.1875rem;
+        width: 100%;
+      }
+      .section-content-left {
+        max-width: 36.625rem;
+        margin-left: 7.1875rem;
+        margin-right: 7.1875rem;
+          h1 {
+            margin-bottom: 1.5rem;
+          }
+          p {
+            margin-bottom: 2.5rem;
+          }
+      }
+}
+
+// Section: Process
+// Section: About
+// Section: Work
+.section-work {
+  background-image: url('../../img/MM-work-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-bg-gradient {
+  background: radial-gradient(rgba(220, 220, 220, 1.0), rgba(180, 180, 180, 1.0));
+}
+
+.top-gradient {
+  width: 100%;
+  height: 7rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.0));
+  align-self: flex-start;
+}
+
+.bottom-gradient {
+  width: 100%;
+  height: 7rem;
+  background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.5));
+  align-self: flex-end;
+}
+
+
+
+
+// Section: Boudler
