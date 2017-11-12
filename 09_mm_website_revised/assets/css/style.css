@@ -729,6 +729,72 @@ footer {
 .process-hero {
   background-color: #F6016C; }
 
+.section-content-executive {
+  max-width: 71.25rem;
+  justify-content: flex-start; }
+  .section-content-executive .section-content-left {
+    max-width: 36.625rem;
+    margin-left: 5rem; }
+    .section-content-executive .section-content-left h1 {
+      margin-bottom: 1.5rem; }
+    .section-content-executive .section-content-left p {
+      margin-bottom: 3.5rem; }
+    .section-content-executive .section-content-left img {
+      max-width: 34.75rem;
+      width: 100%; }
+
+.inner-flex-wrap {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  flex-wrap: wrap;
+  justify-content: center; }
+  .inner-flex-wrap h1 {
+    width: 100%;
+    margin-bottom: 8rem; }
+
+.design-num-parent {
+  width: 100%;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  justify-content: center;
+  align-items: center; }
+
+.design-num {
+  max-width: 64rem;
+  width: 90%;
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .design-num .design-num-container {
+    width: 33%;
+    max-width: 20rem;
+    box-sizing: border-box;
+    padding-left: 2rem;
+    padding-right: 2rem; }
+  .design-num .design-num-container:first-child {
+    margin-bottom: 10rem; }
+
 .about-hero {
   background-color: #64B4B6; }
 
