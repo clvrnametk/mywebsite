@@ -201,9 +201,10 @@ table {
 .d-03-caption-p-c {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
+  font-weight: 100;
   line-height: 1.71;
   text-align: center;
-  color: #9d9ce2; }
+  color: rgba(157, 156, 226, 0.4); }
 
 .d-04-p-btn-w-c {
   font-family: "Roboto", sans-serif;
@@ -302,6 +303,12 @@ table {
   line-height: 1.29;
   text-align: center;
   color: #9d9ce2; }
+
+.star-style {
+  font-size: 1.125rem;
+  color: #ffffff;
+  vertical-align: super;
+  letter-spacing: -1rem; }
 
 .m-03-h-3-p-c {
   font-family: "Roboto Slab", serif;
@@ -794,6 +801,9 @@ footer {
     padding-right: 2rem; }
   .design-num .design-num-container:first-child {
     margin-bottom: 10rem; }
+
+.num-caption {
+  margin-top: 6rem; }
 
 .about-hero {
   background-color: #64B4B6; }

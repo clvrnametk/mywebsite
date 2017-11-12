@@ -213,9 +213,10 @@ $hot-magenta: #fb00cb;
 .d-03-caption-p-c {
 	font-family: $Roboto;
 	font-size: 14px;
+  font-weight: 100;
 	line-height: 1.71;
 	text-align: center;
-	color: #9d9ce2;
+	color: rgba(157, 156, 226, 0.4);
 }
 
 .d-04-p-btn-w-c {
@@ -329,6 +330,13 @@ $hot-magenta: #fb00cb;
 	line-height: 1.29;
 	text-align: center;
 	color: #9d9ce2;
+}
+
+.star-style {
+  font-size: 1.125rem;
+  color: $white;
+  vertical-align: super;
+  letter-spacing: -1rem;
 }
 
 .m-03-h-3-p-c {
