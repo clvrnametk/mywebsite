@@ -3,7 +3,7 @@
 //------------------------------------
 
 .home-hero, .leadership-hero, .about-hero, .process-hero{
-    .letter-img, h1, p {
+    .letter-img-animate, h1, p {
       -webkit-animation: fadein 1.2s, moved 2s; /* Safari, Chrome and Opera > 12.1 */
          -moz-animation: fadein 1.2s, moved 2s; /* Firefox < 16 */
           -ms-animation: fadein 1.2s, moved 2s; /* Internet Explorer */

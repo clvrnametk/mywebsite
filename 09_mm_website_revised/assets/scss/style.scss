@@ -25,7 +25,7 @@
 
 .section-VH {
   min-height: 100vh;
-  max-height: 55rem
+  // max-height: 55rem;
 }
 
 .section-VH-work {
@@ -152,50 +152,15 @@ header {
 //--------------------------
 // GLOBAL: Nav Hover States
 //--------------------------
-header.shrink:hover {
-  height: 7.5rem;
-  background-color: rgba(17, 16, 47, 0.2);
-    .mm-logo {
-      -webkit-transform: scale(1); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-          -ms-transform: scale(1); /* IE 9 */
-              transform: scale(1); /* IE 10, Fx 16+, Op 12.1+ */
-    }
-    li {
-      font-size: 18px;
-    }
-}
-
-header.shrink.shrink-alt:hover {
-  height: 7.5rem;
-  background-color: rgba(17, 16, 47, 1.0);
-    .mm-logo {
-      -webkit-transform: scale(1); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-          -ms-transform: scale(1); /* IE 9 */
-              transform: scale(1); /* IE 10, Fx 16+, Op 12.1+ */
-    }
-    li {
-      font-size: 18px;
-    }
-    .dark-nav {
-      border-bottom: .125rem solid rgba(255, 255, 255, 0);
-      color: rgba(255, 255, 255, 0.8);
-    }
-    .dark-nav:hover {
-      border-bottom: .125rem solid rgba(255, 255, 255, 1.0);
-    }
-    .dark-current-page {
-      border-bottom: .125rem solid rgba(255, 255, 255, 0.8);
-    }
-}
 
 .dark-nav:hover {
-  border-bottom: .125rem solid rgba(0, 0, 0, 0.4);
+  border-bottom: .125rem solid rgba(17, 16, 47, 0.75);
   padding-bottom: .625rem;
 }
 
 // NAV CURRENT PAGE DISABLE
 .dark-current-page {
-  border-bottom: .125rem solid rgba(0, 0, 0, 0.4);
+  border-bottom: .125rem solid rgba(17, 16, 47, 0.75);
   padding-bottom: .625rem;
   pointer-events: none;
   cursor: default;
@@ -204,7 +169,7 @@ header.shrink.shrink-alt:hover {
 // Animation class for navigation
 .shrink {
   height: 4rem;
-  background-color: rgba(17, 16, 47, 0.2);
+  background-color: rgba(17, 16, 47, 0.625);
     .mm-logo {
       -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
           -ms-transform: scale(.75); /* IE 9 */
@@ -213,14 +178,34 @@ header.shrink.shrink-alt:hover {
     li {
       font-size: 1rem;
     }
-}
-
-.shrink-alt {
-  background-color: rgba(17, 16, 47, 0.75);
     a {
       // had to add because the work nav is 300 not 100
       font-weight: 100;
       color: rgba(255, 255, 255, 0.8)
+    }
+    .dark-current-page {
+      border-bottom: .125rem solid rgba(255, 255, 255, 0.8);
+    }
+}
+
+
+header.shrink:hover {
+  height: 7.5rem;
+  background-color: rgba(17, 16, 47, 1.0);
+    .mm-logo {
+      -webkit-transform: scale(1); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: scale(1); /* IE 9 */
+              transform: scale(1); /* IE 10, Fx 16+, Op 12.1+ */
+    }
+    li {
+      font-size: 1.125rem;
+    }
+    .dark-nav {
+      border-bottom: .125rem solid rgba(255, 255, 255, 0);
+      color: rgba(255, 255, 255, 0.8);
+    }
+    .dark-nav:hover {
+      border-bottom: .125rem solid rgba(255, 255, 255, 1.0);
     }
     .dark-current-page {
       border-bottom: .125rem solid rgba(255, 255, 255, 0.8);
@@ -290,6 +275,7 @@ header.shrink.shrink-alt:hover {
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 
@@ -380,6 +366,10 @@ footer {
             margin-bottom: 3.5rem;
           }
       }
+}
+
+.responsive-letter-small {
+  display: none;
 }
 
 // Section: Work
@@ -510,6 +500,10 @@ footer {
 // PROCESS PAGE: Styles
 //------------------------------------
 
+// Hide Responsive Image
+.process-img-small {
+  display: none;
+}
 
 // Section: Hero
 .process-hero {
@@ -823,25 +817,44 @@ footer {
 
 
 
+
+//******************************************
+//******************************************
+// RESPONSIVE STYLES BELOW
+//******************************************
+//******************************************
+
+
+
+
 //******************************************
 // LAYOUT: 1024px Breakpoint
 //******************************************
-
 @media screen and (max-width: 64rem)
                {
+    //------------------------------------
+    // GLOBAL: Responsive Letters
+    //------------------------------------
+    h1.d-01-h-1-w-l {
+      font-size: 36px;
+    }
+    img.responsive-letter {
+      margin-left: 1rem;
+      width: 16rem;
+    }
 
-  //------------------------------------
-  // Responsive Letters
-  //------------------------------------
-  h1.d-01-h-1-w-l {
-    font-size: 36px;
-  }
-  img.responsive-letter {
-    margin-left: 1rem;
-    width: 16rem;
-  }
-
+    //------------------------------------
+    // PROCESS PAGE
+    //------------------------------------
+    .three-img-arrow-padding {
+      transform: scale(.8);
+      margin-left: 1rem;
+      margin-right: 1rem;
+      // margin-top: 4.625rem;
+      // margin-bottom: 2.75rem;
+    }
 }
+
 
 
 
@@ -850,27 +863,53 @@ footer {
 //******************************************
 @media screen and (max-width: 55rem)
                {
+    //------------------------------------
+    // GLOBAL: Footer
+    //------------------------------------
+    footer {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+        div {
+          a.repsonsive-li {
+            margin-right: 1rem;
+          }
+          .responsive-hide {
+            display: none;
+          }
+          p.no-stealing {
+            margin-right: 0;
+          }
+        }
+    }
 
-  //------------------------------------
-  // GLOBAL: Footer
-  //------------------------------------
-
-  footer {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-      div {
-        a.repsonsive-li {
-          margin-right: 1rem;
-        }
-        .responsive-hide {
-          display: none;
-        }
-        p.no-stealing {
-          margin-right: 0;
-        }
+    //------------------------------------
+    // GLOBAL: Responsive Letters
+    //------------------------------------
+    .section-content-home {
+      .section-content-home-left {
+       margin-left: 4rem;
       }
-  }
+    }
+
+    //------------------------------------
+    // PROCESS PAGE
+    //------------------------------------
+    .indiv-img-container {
+      width: 20%;
+    }
+    // .indiv-img-container img {
+    //   transform: scale(.8);
+    //     div {
+    //       padding-left: .5rem;
+    //       padding-right: .5rem;
+    //     }
+    // }
+    // .indiv-img-container div {
+    //   padding-left: .25rem;
+    //   padding-right: .25rem;
+    // }
 }
+
 
 
 
@@ -879,16 +918,234 @@ footer {
 //******************************************
 @media screen and (max-width: 48rem)
                {
+    //------------------------------------
+    // GLOBAL NAV
+    //------------------------------------
+    // Bring in Hamburger
+      .nav-hamburger {
+        display: block;
+        width: 3.75rem;
+      }
+    // revemo Nav List
+      .nav-list {
+        display: none;
+      }
 
-  //------------------------------------
-  // GLOBAL: Footer
-  //------------------------------------
+      .journey-small {
+        display: block;
+      }
 
-  footer {
-    div {
-      .responsive-hide-email {
+      .journey-large {
+        display: none;
+      }
+
+      header {
+       height: 4rem;
+       padding-left: 1rem;
+       padding-right: .25rem;
+       background-color: rgba(17, 16, 47, 0.1);
+      }
+      .mm-logo {
+       -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+           -ms-transform: scale(.75); /* IE 9 */
+               transform: scale(.75); /* IE 10, Fx 16+, Op 12.1+ */
+      }
+      header.shrink:hover {
+        height: 4rem;
+        background-color: rgba(17, 16, 47, .625);
+          .mm-logo {
+            -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+                -ms-transform: scale(.75); /* IE 9 */
+                    transform: scale(.75); /* IE 10, Fx 16+, Op 12.1+ */
+          }
+      }
+
+    //------------------------------------
+    // GLBAL: Responsive Letters
+    //------------------------------------
+      .section-content-home-mobile {
+        .section-content-home-left {
+          margin-left: 2rem;
+            img.responsive-letter {
+              margin-left: 1.5rem;
+              width: 14rem;
+            }
+            h1.d-01-h-1-w-l {
+              font-size: 2.25rem;
+            }
+            p.d-02-p-body-section-p-l {
+              font-size: 1rem;
+            }
+        }
+      }
+
+      //------------------------------------
+      // GLOBAL: Footer
+      //------------------------------------
+
+      footer {
+        div {
+          .responsive-hide-email {
+            display: none;
+          }
+        }
+      }
+
+      //------------------------------------
+      // HOME PAGE: Responsive Home Hero
+      //------------------------------------
+      .hero-content {
+        max-width: 30.1875rem;
+      }
+      .home-hero{
+        p.d-01-p-body-hero-w-l {
+          font-size: 1rem;
+        }
+      }
+
+      //------------------------------------
+      // PROCESS PAGE
+      //------------------------------------
+      // Global Overflow Padding
+      .section-800-overflow {
+        max-height: 200rem;
+      }
+      .section-overflow-padding {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+      }
+
+      // A few of My Skills Section
+      .skills-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .skills-container {
+        width: 100%;
+        padding-left: 0;
+
+        margin-left: 2rem;
+        margin-right: 2rem;
+        margin-bottom: 4rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+          h1, ul {
+            width: 100%;
+            text-align: center;
+          }
+      }
+
+      //Global Three Image container
+      .three-img-container {
+        flex-wrap: wrap;
+        margin-bottom: 2rem;
+          .three-img-arrow-padding {
+            display: none;
+          }
+          .indiv-img-container{
+            width: 100%;
+            margin-bottom: 3.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+              .process-img {
+                display: none;
+              }
+              .process-img-small {
+                display: block;
+                max-width: 9.875rem;
+              }
+              div {
+                width: 100%;
+              }
+          }
+      }
+
+      // Design by Numbers Section
+      .design-num {
+        flex-wrap: wrap;
+        justify-content: center;
+          .design-num-container {
+            width: 100%;
+            margin-bottom: 4rem;
+          }
+          .design-num-container:first-child {
+            margin-bottom: 4rem;
+          }
+      }
+      .num-caption {
+        margin-top: 2rem;
+      }
+
+}
+
+
+
+
+//******************************************
+// LAYOUT: 660px Breakpoint
+//******************************************
+@media screen and (max-width: 41.25rem)
+               {
+    //------------------------------------
+    // Reduce max heigh ot letter sections
+    //------------------------------------
+    .section-800-short {
+      max-height: 56rem;
+    }
+
+    //------------------------------------
+    // Letter Sections
+    //------------------------------------
+    .section-content-home-mobile {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+        .responsive-letter {
+          display: none;
+        }
+        .responsive-letter-small {
+          width: 12.875rem;
+          display: block;
+          margin-bottom: 3rem;
+        }
+        .section-content-home-left {
+          max-width: 26rem;
+          margin-left: 2.5rem;
+          margin-right: 2.5rem;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+            h1, p {
+              text-align: center;
+            }
+        }
+    }
+
+    //------------------------------------
+    // PROCESS PAGE
+    //------------------------------------
+    .three-step-intro {
+      padding-left: 4rem;
+      padding-right: 4rem;
+    }
+}
+
+
+
+
+//******************************************
+// LAYOUT: 460px Breakpoint
+//******************************************
+@media screen and (max-width: 28.75rem)
+               {
+    //------------------------------------
+    // Global Nav
+    //------------------------------------
+    p.no-stealing {
+      span {
         display: none;
       }
     }
-  }
 }
