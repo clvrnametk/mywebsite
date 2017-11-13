@@ -193,6 +193,10 @@ $hot-magenta: #fb00cb;
 	color: $white;
 }
 
+.d-03-p-w-l-alt {
+	font-weight: 100;
+}
+
 .d-03-p-2-w-c {
 	font-family: $Roboto;
 	font-size: 18px;
@@ -204,6 +208,15 @@ $hot-magenta: #fb00cb;
 .d-03-p-1-p-c {
 	font-family: $Roboto;
 	font-size: 18px;
+	font-weight: 300;
+	line-height: 1.33;
+	text-align: center;
+	color: #9d9ce2;
+}
+
+.d-03-p-1-p-c-alt {
+	font-family: $Roboto;
+	font-size: 16px;
 	font-weight: 300;
 	line-height: 1.33;
 	text-align: center;

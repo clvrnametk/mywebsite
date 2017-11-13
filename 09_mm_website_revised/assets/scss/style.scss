@@ -30,7 +30,7 @@
 
 .section-800 {
   height: 100vh;
-  max-height: 55rem
+  max-height: 62rem;
 }
 
 .parent-felx {
@@ -408,6 +408,9 @@ footer {
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
 
+  margin-left: 2rem;
+  margin-right: 2rem;
+
   box-sizing: border-box;
 
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -438,6 +441,26 @@ footer {
 // Section: Hero
 .leadership-hero {
   background-color: #FC4C48;
+}
+
+// Section: Executive
+.section-content-executive {
+    max-width: 71.25rem;
+    justify-content: flex-start;
+      .section-content-left {
+        max-width: 36.625rem;
+        margin-left: 5rem;
+          h1 {
+            margin-bottom: 1.5rem;
+          }
+          p {
+            margin-bottom: 3.5rem;
+          }
+          img {
+            max-width: 34.75rem;
+            width: 100%;
+          }
+      }
 }
 
 // Section: Mentor
@@ -486,24 +509,95 @@ footer {
   background-color: #F6016C;
 }
 
-// Section: Executive
-.section-content-executive {
-    max-width: 71.25rem;
-    justify-content: flex-start;
-      .section-content-left {
-        max-width: 36.625rem;
-        margin-left: 5rem;
-          h1 {
-            margin-bottom: 1.5rem;
-          }
-          p {
-            margin-bottom: 3.5rem;
-          }
-          img {
-            max-width: 34.75rem;
-            width: 100%;
-          }
-      }
+// Section: Doing the Thing
+.three-step-flex {
+  flex-wrap: wrap;
+}
+
+
+.three-step-intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5rem;
+    h1 {
+      width: 100%;
+      margin-bottom: 1.875rem;
+    }
+    p {
+      max-width: 36rem;
+    }
+}
+
+.three-img-container {
+  margin-bottom: 6rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+
+  align-items: flex-start;
+}
+
+.three-img-arrow-padding {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 4.625rem;
+  margin-bottom: 2.75rem;
+}
+
+
+.indiv-img-container {
+  width: 12.5rem;
+    img {
+      width: 100%;
+      margin-bottom: .75rem;
+    }
+    h1 {
+      margin-bottom: .5rem;
+    }
+}
+
+// Section: A few skills
+
+.skills-parent-flex {
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.skills-inner-flex {
+  flex-wrap: wrap;
+}
+
+.skills-header {
+  max-width: 71.25rem;
+  width: 100%;
+  margin-bottom: 8rem;
+}
+
+.skills-flex {
+  max-width: 71.25rem;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.skills-container {
+  width: 33%;
+  max-width: 66.25rem;
+
+  box-sizing: border-box;
+  padding-left: 3rem;
+    img {
+      margin-bottom: .5rem;
+    }
+    h1 {
+      margin-bottom: 1rem;
+    }
 }
 
 
@@ -568,6 +662,7 @@ footer {
 
 .num-caption {
   margin-top: 6rem;
+  width: 100%;
 }
 
 
@@ -579,4 +674,41 @@ footer {
 // Section: Hero
 .about-hero {
   background-color: #64B4B6;
+}
+
+.hats-flex {
+  max-width: 71.25rem;
+  width: 100%;
+
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0rem;
+
+  justify-content: space-around;
+}
+
+.hats-img-margin {
+  margin-bottom: .75rem;
+}
+
+.indiv-img-container-favs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+
+  align-items: flex-start;
+  max-width: 23rem;
+    img {
+      width: 100%;
+      max-width: 13rem;
+      margin-bottom: .75rem;
+    }
+    h1 {
+      width: 100%;
+      margin-bottom: .5rem;
+    }
 }

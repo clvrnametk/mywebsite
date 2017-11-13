@@ -146,6 +146,9 @@
   text-align: left;
   color: #ffffff; }
 
+.d-03-p-w-l-alt {
+  font-weight: 100; }
+
 .d-03-p-2-w-c {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -156,6 +159,14 @@
 .d-03-p-1-p-c {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: center;
+  color: #9d9ce2; }
+
+.d-03-p-1-p-c-alt {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.33;
   text-align: center;

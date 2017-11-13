@@ -183,6 +183,9 @@ table {
   text-align: left;
   color: #ffffff; }
 
+.d-03-p-w-l-alt {
+  font-weight: 100; }
+
 .d-03-p-2-w-c {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
@@ -193,6 +196,14 @@ table {
 .d-03-p-1-p-c {
   font-family: "Roboto", sans-serif;
   font-size: 18px;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: center;
+  color: #9d9ce2; }
+
+.d-03-p-1-p-c-alt {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.33;
   text-align: center;
@@ -391,7 +402,7 @@ table {
 
 .section-800 {
   height: 100vh;
-  max-height: 55rem; }
+  max-height: 62rem; }
 
 .parent-felx {
   display: -webkit-box;
@@ -682,6 +693,8 @@ footer {
   padding-right: 3.125rem;
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
   box-sizing: border-box;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -702,6 +715,20 @@ footer {
 
 .leadership-hero {
   background-color: #FC4C48; }
+
+.section-content-executive {
+  max-width: 71.25rem;
+  justify-content: flex-start; }
+  .section-content-executive .section-content-left {
+    max-width: 36.625rem;
+    margin-left: 5rem; }
+    .section-content-executive .section-content-left h1 {
+      margin-bottom: 1.5rem; }
+    .section-content-executive .section-content-left p {
+      margin-bottom: 3.5rem; }
+    .section-content-executive .section-content-left img {
+      max-width: 34.75rem;
+      width: 100%; }
 
 .section-mentor {
   background-image: url("../../img/MM_class_photo.png");
@@ -736,19 +763,76 @@ footer {
 .process-hero {
   background-color: #F6016C; }
 
-.section-content-executive {
+.three-step-flex {
+  flex-wrap: wrap; }
+
+.three-step-intro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5rem; }
+  .three-step-intro h1 {
+    width: 100%;
+    margin-bottom: 1.875rem; }
+  .three-step-intro p {
+    max-width: 36rem; }
+
+.three-img-container {
+  margin-bottom: 6rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  align-items: flex-start; }
+
+.three-img-arrow-padding {
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-top: 4.625rem;
+  margin-bottom: 2.75rem; }
+
+.indiv-img-container {
+  width: 12.5rem; }
+  .indiv-img-container img {
+    width: 100%;
+    margin-bottom: .75rem; }
+  .indiv-img-container h1 {
+    margin-bottom: .5rem; }
+
+.skills-parent-flex {
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap; }
+
+.skills-inner-flex {
+  flex-wrap: wrap; }
+
+.skills-header {
   max-width: 71.25rem;
-  justify-content: flex-start; }
-  .section-content-executive .section-content-left {
-    max-width: 36.625rem;
-    margin-left: 5rem; }
-    .section-content-executive .section-content-left h1 {
-      margin-bottom: 1.5rem; }
-    .section-content-executive .section-content-left p {
-      margin-bottom: 3.5rem; }
-    .section-content-executive .section-content-left img {
-      max-width: 34.75rem;
-      width: 100%; }
+  width: 100%;
+  margin-bottom: 8rem; }
+
+.skills-flex {
+  max-width: 71.25rem;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+.skills-container {
+  width: 33%;
+  max-width: 66.25rem;
+  box-sizing: border-box;
+  padding-left: 3rem; }
+  .skills-container img {
+    margin-bottom: .5rem; }
+  .skills-container h1 {
+    margin-bottom: 1rem; }
 
 .inner-flex-wrap {
   display: -webkit-box;
@@ -805,9 +889,38 @@ footer {
     margin-bottom: 10rem; }
 
 .num-caption {
-  margin-top: 6rem; }
+  margin-top: 6rem;
+  width: 100%; }
 
 .about-hero {
   background-color: #64B4B6; }
+
+.hats-flex {
+  max-width: 71.25rem;
+  width: 100%;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0rem;
+  justify-content: space-around; }
+
+.hats-img-margin {
+  margin-bottom: .75rem; }
+
+.indiv-img-container-favs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+  align-items: flex-start;
+  max-width: 23rem; }
+  .indiv-img-container-favs img {
+    width: 100%;
+    max-width: 13rem;
+    margin-bottom: .75rem; }
+  .indiv-img-container-favs h1 {
+    width: 100%;
+    margin-bottom: .5rem; }
 
 /*# sourceMappingURL=style.css.map */
