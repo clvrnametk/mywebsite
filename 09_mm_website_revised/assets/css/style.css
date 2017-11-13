@@ -414,11 +414,17 @@ table {
   padding-top: 16rem;
   padding-bottom: 16rem; }
 
+.section-padding-top-M {
+  padding-top: 10rem; }
+
 .section-padding-top-L {
   padding-top: 14rem; }
 
 .section-padding-bottom-L {
   padding-bottom: 14rem; }
+
+.section-padding-bottom-XL {
+  padding-bottom: 16rem; }
 
 .parent-flex {
   display: -webkit-box;
@@ -926,22 +932,9 @@ footer {
 .mm-logo-show {
   display: block; }
 
-.flex-center-all {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  /* NEW, Spec - Firefox, Chrome, Opera */
-  justify-content: center;
-  align-items: center; }
-
 .projects-parent {
   width: 100%;
   max-width: 75rem;
-  padding-top: 10rem;
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
@@ -966,40 +959,13 @@ footer {
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap; }
-  .project img:first-child {
+  .project img {
     width: 100%;
     margin-bottom: 1.5rem; }
-  .project .A03-p-small-head {
-    line-height: 1.25rem;
-    color: rgba(0, 0, 0, 0.4); }
-  .project .A03-p-head {
+  .project .d-wo-h-2-p-l {
+    line-height: 1.5rem; }
+  .project .d-wo-h-1-dp-l {
     margin-bottom: .75rem; }
-  .project .focus-parent {
-    align-self: flex-end; }
-  .project .divider-line-parent {
-    width: 100%; }
-  .project .divider-line {
-    height: .125rem;
-    width: 5rem;
-    background-color: rgba(0, 0, 0, 0.25);
-    margin-top: 1.25rem;
-    margin-bottom: 1.75rem; }
-  .project ul li {
-    display: inline;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: .5rem;
-    padding-top: .5rem;
-    box-sizing: border-box;
-    margin-right: .5rem;
-    font-size: .875rem;
-    line-height: 2.7625rem;
-    border: .08rem;
-    border-radius: 3rem;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.4); }
-  .project .focus-icon {
-    margin-right: .5rem; }
 
 @media screen and (max-width: 64rem) {
   h1.d-01-h-1-w-l {
@@ -1133,7 +1099,21 @@ footer {
       margin-bottom: 4rem; }
 
   .num-caption {
-    margin-top: 2rem; } }
+    margin-top: 2rem; }
+
+  .project {
+    margin-bottom: 3rem; }
+    .project img {
+      margin-bottom: .75rem; }
+
+  .section-padding-top-work {
+    padding-top: 6.5rem; }
+
+  .d-wo-h-1-dp-l {
+    font-size: 1.125rem; }
+
+  .d-wo-p-dp-l {
+    font-size: 1rem; } }
 @media screen and (max-width: 41.25rem) {
   .section-content-home-mobile {
     display: flex;
