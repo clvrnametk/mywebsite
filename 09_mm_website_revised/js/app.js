@@ -5,9 +5,13 @@ $(document).on ('scroll', function(){
   if ($(document).scrollTop() > 100)
   {
     $('header').addClass('shrink shrink-alt');
+    $('.mm-logo-work-small').addClass('mm-logo-show');
+    $('.mm-logo-work-large').addClass('mm-logo-hide');
   }
   else
   {
     $('header').removeClass('shrink shrink-alt');
+    $('.mm-logo-work-small').removeClass('mm-logo-show');
+    $('.mm-logo-work-large').removeClass('mm-logo-hide');
   }
 });
