@@ -25,20 +25,36 @@
 
 .section-VH {
   min-height: 100vh;
-  // max-height: 55rem;
+  // For very short browser Windows
+  box-sizing: border-box;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.section-VH-work {
-  min-height: 100vh;
+.section-padding-M {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
-
-.section-800 {
-  height: 100vh;
-  max-height: 62rem;
+.section-padding-L {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
 }
 
-.parent-felx {
+.section-padding-XL {
+  padding-top: 16rem;
+  padding-bottom: 16rem;
+}
+
+.section-padding-top-L {
+  padding-top: 14rem;
+}
+
+.section-padding-bottom-L {
+  padding-bottom: 14rem;
+}
+
+.parent-flex {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -373,7 +389,7 @@ footer {
 }
 
 // Section: Work
-.section-work {
+.section-work-bg {
   background-image: url('../../img/MM-work-bg.png');
   background-position: center;
   background-size: cover;
@@ -388,14 +404,16 @@ footer {
   width: 100%;
   height: 7rem;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.0));
-  align-self: flex-start;
+  position: absolute;
+  top: 0;
 }
 
 .bottom-gradient {
   width: 100%;
   height: 7rem;
   background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.5));
-  align-self: flex-end;
+  position: absolute;
+  bottom: 0;
 }
 
 .section-work-content {
@@ -460,7 +478,7 @@ footer {
 }
 
 // Section: Mentor
-.section-mentor {
+.section-mentor-bg {
   background-image: url('../../img/MM_class_photo.png');
   background-position: center;
   background-size: cover;
@@ -506,7 +524,7 @@ footer {
 }
 
 // Section: Hero
-.process-hero {
+.process-hero-bg {
   background-color: #F6016C;
 }
 
@@ -559,17 +577,6 @@ footer {
 }
 
 // Section: A few skills
-.skills-parent-flex {
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
 .skills-inner-flex {
   flex-wrap: wrap;
 }
@@ -1007,13 +1014,14 @@ footer {
       // PROCESS PAGE
       //------------------------------------
       // Global Overflow Padding
-      .section-800-overflow {
-        max-height: 200rem;
-      }
-      .section-overflow-padding {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-      }
+      // .section-800-overflow {
+      //   height: auto;
+      //   max-height: 200rem;
+      // }
+      // .section-overflow-padding {
+      //   padding-top: 8rem;
+      //   padding-bottom: 8rem;
+      // }
 
       // A few of My Skills Section
       .skills-flex {
@@ -1091,9 +1099,9 @@ footer {
     //------------------------------------
     // Reduce max heigh ot letter sections
     //------------------------------------
-    .section-800-short {
-      max-height: 56rem;
-    }
+    // .section-800-short {
+    //   max-height: 56rem;
+    // }
 
     //------------------------------------
     // Letter Sections
