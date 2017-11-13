@@ -76,6 +76,8 @@
   transform: translateX(-50%);
 }
 
+
+
 //------------------------------------
 // GLOBAL: Nav
 //------------------------------------
@@ -144,6 +146,8 @@ header {
       cursor: default;
     }
 }
+
+
 
 //--------------------------
 // GLOBAL: Nav Hover States
@@ -281,7 +285,7 @@ header.shrink.shrink-alt:hover {
 
 .hero-gradient {
   width: 100%;
-  height: 5rem;
+  height: 3.75rem;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0.0));
   position: absolute;
   top: 0;
@@ -332,7 +336,6 @@ footer {
 
 
 
-
 //------------------------------------
 // HOME PAGE: Styles
 //------------------------------------
@@ -358,7 +361,6 @@ footer {
   width: 4.25rem;
 }
 
-
 // Home Page Left Sections
 .section-content-home {
     max-width: 71.25rem;
@@ -379,8 +381,6 @@ footer {
           }
       }
 }
-
-
 
 // Section: Work
 .section-work {
@@ -444,7 +444,6 @@ footer {
 // LEADERSHIP PAGE: Styles
 //------------------------------------
 
-
 // Section: Hero
 .leadership-hero {
   background-color: #FC4C48;
@@ -506,6 +505,7 @@ footer {
 }
 
 
+
 //------------------------------------
 // PROCESS PAGE: Styles
 //------------------------------------
@@ -565,7 +565,6 @@ footer {
 }
 
 // Section: A few skills
-
 .skills-parent-flex {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -606,7 +605,6 @@ footer {
       margin-bottom: 1rem;
     }
 }
-
 
 // Section: Design by Numbers
 .inner-flex-wrap {
@@ -660,7 +658,6 @@ footer {
         h1 {
           margin-bottom: .625rem;
         }
-
     }
     .design-num-container:first-child {
       margin-bottom: 10rem;
@@ -673,10 +670,10 @@ footer {
 }
 
 
+
 //------------------------------------
 // ABOUT PAGE: Styles
 //------------------------------------
-
 
 // Section: Hero
 .about-hero {
@@ -721,6 +718,7 @@ footer {
 }
 
 
+
 //------------------------------------
 // PROJECT PAGE
 //------------------------------------
@@ -732,7 +730,6 @@ footer {
 .mm-logo-show {
   display: block;
 }
-
 
 .flex-center-all {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -822,4 +819,76 @@ footer {
     .focus-icon {
       margin-right: .5rem;
     }
+}
+
+
+
+//******************************************
+// LAYOUT: 1024px Breakpoint
+//******************************************
+
+@media screen and (max-width: 64rem)
+               {
+
+  //------------------------------------
+  // Responsive Letters
+  //------------------------------------
+  h1.d-01-h-1-w-l {
+    font-size: 36px;
+  }
+  img.responsive-letter {
+    margin-left: 1rem;
+    width: 16rem;
+  }
+
+}
+
+
+
+//******************************************
+// LAYOUT: 880px Breakppoint
+//******************************************
+@media screen and (max-width: 55rem)
+               {
+
+  //------------------------------------
+  // GLOBAL: Footer
+  //------------------------------------
+
+  footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+      div {
+        a.repsonsive-li {
+          margin-right: 1rem;
+        }
+        .responsive-hide {
+          display: none;
+        }
+        p.no-stealing {
+          margin-right: 0;
+        }
+      }
+  }
+}
+
+
+
+//******************************************
+// LAYOUT: 768px Breakppoint
+//******************************************
+@media screen and (max-width: 48rem)
+               {
+
+  //------------------------------------
+  // GLOBAL: Footer
+  //------------------------------------
+
+  footer {
+    div {
+      .responsive-hide-email {
+        display: none;
+      }
+    }
+  }
 }

@@ -599,7 +599,7 @@ header.shrink.shrink-alt:hover {
 
 .hero-gradient {
   width: 100%;
-  height: 5rem;
+  height: 3.75rem;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(255, 255, 255, 0));
   position: absolute;
   top: 0;
@@ -1007,5 +1007,26 @@ footer {
     border-color: rgba(0, 0, 0, 0.4); }
   .project .focus-icon {
     margin-right: .5rem; }
+
+@media screen and (max-width: 64rem) {
+  h1.d-01-h-1-w-l {
+    font-size: 36px; }
+
+  img.responsive-letter {
+    margin-left: 1rem;
+    width: 16rem; } }
+@media screen and (max-width: 55rem) {
+  footer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; }
+    footer div a.repsonsive-li {
+      margin-right: 1rem; }
+    footer div .responsive-hide {
+      display: none; }
+    footer div p.no-stealing {
+      margin-right: 0; } }
+@media screen and (max-width: 48rem) {
+  footer div .responsive-hide-email {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
