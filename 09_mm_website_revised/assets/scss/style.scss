@@ -62,6 +62,11 @@
   padding-bottom: 16rem;
 }
 
+.section-padding-sides {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .parent-flex {
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -369,6 +374,10 @@ footer {
   width: 4.25rem;
 }
 
+.down-arrow-small {
+  display: none;
+}
+
 // Home Page Left Sections
 .section-content-home {
     max-width: 71.25rem;
@@ -412,6 +421,7 @@ footer {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(255, 255, 255, 0.0));
   position: absolute;
   top: 0;
+  z-index: -1;
 }
 
 .bottom-gradient {
@@ -420,6 +430,7 @@ footer {
   background: linear-gradient(rgba(255, 255, 255, 0.0), rgba(0, 0, 0, 0.5));
   position: absolute;
   bottom: 0;
+  z-index: -1;
 }
 
 .section-work-content {
@@ -468,7 +479,7 @@ footer {
     max-width: 71.25rem;
     justify-content: flex-start;
       .section-content-left {
-        max-width: 36.625rem;
+        max-width: 34.75rem;
         margin-left: 5rem;
           h1 {
             margin-bottom: 1.5rem;
@@ -476,12 +487,17 @@ footer {
           p {
             margin-bottom: 3.5rem;
           }
-          img {
-            max-width: 34.75rem;
-            width: 100%;
-          }
       }
 }
+
+.executive-img {
+  width: 34.75rem;
+}
+
+.executive-img-small {
+  display: none;
+}
+
 
 // Section: Mentor
 .section-mentor-bg {
@@ -492,30 +508,7 @@ footer {
 }
 
 .section-mentor-content {
-  max-width: 34.75rem;
-  padding-left: 3.125rem;
-  padding-right: 3.125rem;
-  padding-top: 3.125rem;
-  padding-bottom: 3.125rem;
-
-  box-sizing: border-box;
-
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-
-  flex-wrap: wrap;
-  justify-content: center;
-
   background-color: #FC4C48;
-  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
-    h1 {
-      margin-bottom: 2.125rem;
-    }
-    p {
-      margin-bottom: 3.125rem;
-    }
 }
 
 
@@ -683,8 +676,13 @@ footer {
 //------------------------------------
 
 // Section: Hero
-.about-hero {
+.about-hero-bg {
   background-color: #64B4B6;
+}
+
+.responsive-headshot {
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .hats-flex {
@@ -874,17 +872,24 @@ footer {
     .indiv-img-container {
       width: 20%;
     }
-    // .indiv-img-container img {
-    //   transform: scale(.8);
-    //     div {
-    //       padding-left: .5rem;
-    //       padding-right: .5rem;
-    //     }
-    // }
-    // .indiv-img-container div {
-    //   padding-left: .25rem;
-    //   padding-right: .25rem;
-    // }
+
+    //------------------------------------
+    // LEADERSHIP PAGE
+    //------------------------------------
+    .section-content-executive {
+      .section-content-left {
+        .d-02-h-2-w-l {
+          // font-size: ;
+        }
+        .d-02-p-body-section-p-l {
+          font-size: 1rem;
+        }
+      }
+    }
+
+    .executive-img {
+      width: 24rem;
+    }
 }
 
 
@@ -899,43 +904,63 @@ footer {
     // GLOBAL NAV
     //------------------------------------
     // Bring in Hamburger
-      .nav-hamburger {
-        display: block;
-        width: 3.75rem;
-      }
+    .nav-hamburger {
+      display: block;
+      width: 3.75rem;
+    }
     // revemo Nav List
-      .nav-list {
-        display: none;
-      }
+    .nav-list {
+      display: none;
+    }
 
-      .journey-small {
-        display: block;
-      }
+    .journey-small {
+      display: block;
+    }
 
-      .journey-large {
-        display: none;
-      }
+    .journey-large {
+      display: none;
+    }
 
-      header {
-       height: 4rem;
-       padding-left: 1rem;
-       padding-right: .25rem;
-       background-color: rgba(17, 16, 47, 0.1);
-      }
-      .mm-logo {
-       -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-           -ms-transform: scale(.75); /* IE 9 */
-               transform: scale(.75); /* IE 10, Fx 16+, Op 12.1+ */
-      }
-      header.shrink:hover {
-        height: 4rem;
-        background-color: rgba(17, 16, 47, .625);
-          .mm-logo {
-            -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-                -ms-transform: scale(.75); /* IE 9 */
-                    transform: scale(.75); /* IE 10, Fx 16+, Op 12.1+ */
-          }
-      }
+    header {
+     height: 4rem;
+     padding-left: 1rem;
+     padding-right: .25rem;
+     background-color: rgba(17, 16, 47, 0.1);
+    }
+    .mm-logo {
+     -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+         -ms-transform: scale(.75); /* IE 9 */
+             transform: scale(.75); /* IE 10, Fx 16+, Op 12.1+ */
+    }
+    header.shrink:hover {
+      height: 4rem;
+      background-color: rgba(17, 16, 47, .625);
+        .mm-logo {
+          -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+              -ms-transform: scale(.75); /* IE 9 */
+                  transform: scale(.75); /* IE 10, Fx 16+, Op 12.1+ */
+        }
+    }
+
+    //------------------------------------
+    // GLOBAL: Responsive Letters
+    //------------------------------------
+    .section-padding-bottom-S {
+      padding-bottom: 2rem;
+    }
+    .section-padding-bottom-S-M {
+      padding-bottom: 3rem;
+    }
+
+    //------------------------------------
+    // GLOBAL: Font Sizes
+    //------------------------------------
+    .d-02-h-2-w-c {
+      font-size: 1.5rem;
+    }
+    .d-02-p-body-section-p-c {
+      font-size: 1rem;
+    }
 
     //------------------------------------
     // GLBAL: Responsive Letters
@@ -950,10 +975,13 @@ footer {
             h1.d-01-h-1-w-l {
               font-size: 2.25rem;
             }
-            p.d-02-p-body-section-p-l {
+            p.d-02-p-body-section-p-l, p.d-01-p-body-hero-w-l {
               font-size: 1rem;
             }
         }
+      }
+      h1.d-01-h-1-w-c {
+        font-size: 2.25rem;
       }
 
       //------------------------------------
@@ -1064,6 +1092,51 @@ footer {
       .d-wo-p-dp-l {
         font-size: 1rem;
       }
+
+      //------------------------------------
+      // LEADERSHIP PAGE
+      //------------------------------------
+      .section-content-executive {
+        justify-content: center;
+        flex-wrap: wrap;
+          .section-content-left {
+            max-width: 28rem;
+            margin-left: 2rem;
+            margin-right: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+              p {
+                margin-bottom: 2rem;
+              }
+          }
+          .d-02-p-body-section-p-l {
+            text-align: center;
+          }
+      }
+      .executive-img {
+        display: none;
+      }
+      .executive-img-small {
+        display: block;
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      //------------------------------------
+      // ABOUT PAGE
+      //------------------------------------
+      // Favs Section
+      .indiv-img-container-favs{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 3.125rem;
+          img {
+            margin-bottom: 1.25rem;
+          }
+      }
+
+
 }
 
 
@@ -1075,7 +1148,7 @@ footer {
 @media screen and (max-width: 41.25rem)
                {
     //------------------------------------
-    // Letter Sections
+    // GLOBAL: Letter Sections
     //------------------------------------
     .section-content-home-mobile {
       display: flex;
@@ -1088,6 +1161,9 @@ footer {
           width: 12.875rem;
           display: block;
           margin-bottom: 3rem;
+        }
+        .responsive-headshot {
+          margin-bottom: 1rem;
         }
         .section-content-home-left {
           max-width: 26rem;
@@ -1102,12 +1178,40 @@ footer {
         }
     }
 
+    .d-01-p-body-hero-w-l {
+      font-size: 1.25rem;
+    }
+
+    //------------------------------------
+    // GLOBAL: Arrows
+    //------------------------------------
+    .down-arrow {
+      display: none;
+    }
+
+    .down-arrow-small {
+      cursor: pointer;
+      width: 3.25rem;
+      display: block;
+    }
+
+
     //------------------------------------
     // PROCESS PAGE
     //------------------------------------
     .three-step-intro {
       padding-left: 4rem;
       padding-right: 4rem;
+    }
+
+    // Work Content Center P text
+    .section-work-content {
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1rem;
+      }
     }
 }
 
