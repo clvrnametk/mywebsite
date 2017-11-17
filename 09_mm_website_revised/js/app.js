@@ -17,3 +17,7 @@ $(document).on ('scroll', function(){
     $('.mm-logo-work-large').removeClass('mm-logo-hide');
   }
 });
+
+
+// Accepts any class name
+// var rellax = new Rellax('.rellax');

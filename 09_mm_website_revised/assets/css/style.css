@@ -1184,6 +1184,9 @@ footer {
     padding-bottom: 6rem;
     padding-top: 6rem; }
 
+  .section-padding-responsive-bottom-xs {
+    padding-bottom: 1rem; }
+
   .section-padding-responsive-top-s {
     padding-top: 6rem; }
 
