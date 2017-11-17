@@ -4,22 +4,22 @@
 
 // Modules and Variables -or- Libraries
 @import "./libraries/bourbon/bourbon.scss";
-@import "./libraries/neat/neat.scss";
 
 // Partials
-// @import "./partials/_reset.scss";
 @import "./partials/_reset.scss";
 @import "./partials/typography.scss";
 @import "./partials/animation.scss";
 
 
 
+
 //------------------------------------
 // GLOBAL: Section Styles
 //------------------------------------
-
 body {
   overflow-x: hidden; /* needed because hiding the menu on the right side is not perfect,  */
+  // Stop flickering in safari
+  -webkit-font-smoothing: antialiased;
 }
 
 .main-purple-bg {
@@ -27,6 +27,7 @@ body {
   color: white;
 }
 
+// GLOBAL: Section Padding
 .section-VH {
   min-height: 100vh;
   // For very short browser Windows
@@ -106,7 +107,9 @@ body {
   bottom: 3rem;
   // Safari fix
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translateX(-50%); /* IE 9 */
+          transform: translateX(-50%);
 }
 
 
@@ -129,7 +132,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 9999;
-  // Flexbox
+
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
@@ -160,7 +163,7 @@ header {
       text-decoration: none;
       color: inherit;
       padding-bottom: 1.5rem;
-      border-bottom: .125rem solid rgba(255, 255, 255, 0);
+      border-bottom: 0.125rem solid rgba(255, 255, 255, 0);
       // Transisiton
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
@@ -169,26 +172,28 @@ header {
     }
     // Nav Item: Hover Transitions
     li a:hover {
-      border-bottom: .125rem solid rgba(255, 255, 255, 1.0);
-      padding-bottom: .625rem;
+      border-bottom: 0.125rem solid rgba(255, 255, 255, 1.0);
+      padding-bottom: 0.625rem;
     }
     .current-page {
-      border-bottom: .125rem solid rgba(255, 255, 255, 1.0);
-      padding-bottom: .625rem;
+      border-bottom: 0.125rem solid rgba(255, 255, 255, 1.0);
+      padding-bottom: 0.625rem;
       pointer-events: none;
       cursor: default;
     }
 }
 
 
+
 //------------------------------------
 // GLOBAL TEST: Sliding Hamburger
 //------------------------------------
-
 .nav-item-small {
   text-decoration: none;
-  // color: #232323;
 
+  -webkit-transition: color 0.3s ease;
+  -moz-transition: color 0.3s ease;
+  -o-transition: color 0.3s ease;
   transition: color 0.3s ease;
 }
 
@@ -257,13 +262,11 @@ header {
 
   transform-origin: 2px 0px;
 
-  transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1),
-              // background 0.5s cubic-bezier(0.4, 0.0, 0.2, 1),
-  // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-  //             background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
+  -webkit-transition:  transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.55s ease;
+  -moz-transition:  transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.55s ease;
+  -o-transition:  transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.55s ease;
+  transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1), opacity 0.55s ease;
 }
-
 
 #menuToggle span:first-child {
   transform-origin: 0% 0%;
@@ -279,7 +282,10 @@ header {
  */
 #menuToggle input:checked ~ span {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+
+  -webkit-transform: rotate(45deg) translate(-2px, -1px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(45deg) translate(-2px, -1px); /* IE 9 */
+          transform: rotate(45deg) translate(-2px, -1px);
   background: white;
 }
 
@@ -288,7 +294,9 @@ header {
  */
 #menuToggle input:checked ~ span:nth-last-child(3) {
   opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(0deg) scale(0.2, 0.2); /* IE 9 */
+          transform: rotate(0deg) scale(0.2, 0.2);
 }
 
 /*
@@ -296,7 +304,10 @@ header {
  */
 #menuToggle input:checked ~ span:nth-last-child(2) {
   opacity: 1;
-  transform: rotate(-45deg) translate(0, -1px);
+
+  -webkit-transform: rotate(-45deg) translate(0, -1px); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: rotate(-45deg) translate(0, -1px); /* IE 9 */
+          transform: rotate(-45deg) translate(0, -1px);
 }
 
 /*
@@ -318,10 +329,14 @@ header {
   /* to stop flickering of text in safari */
 
   transform-origin: 0% 0%;
-  transform: translate(100%, 0);
+  -webkit-transform: translate(100%, 0); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: translate(100%, 0); /* IE 9 */
+          transform: translate(100%, 0);
 
-  // transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-  transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1),
+  -webkit-transition:  transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  -moz-transition:  transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  -o-transition:  transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: transform 0.5s cubic-bezier(0.4, 0.0, 0.2, 1);
 
 }
 
@@ -337,15 +352,17 @@ header {
  */
 #menuToggle input:checked ~ ul
 {
-  transform: scale(1.0, 1.0);
+  -webkit-transform: scale(1.0, 1.0); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+      -ms-transform: scale(1.0, 1.0); /* IE 9 */
+          transform: scale(1.0, 1.0);
   opacity: 1;
 }
+
 
 
 //--------------------------
 // GLOBAL: Nav Hover States
 //--------------------------
-
 .dark-nav:hover {
   border-bottom: .125rem solid rgba(17, 16, 47, 0.75);
   padding-bottom: .625rem;
@@ -364,23 +381,20 @@ header {
   height: 4rem;
   background-color: rgba(17, 16, 47, 0.625);
     .mm-logo {
-      -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-          -ms-transform: scale(.75); /* IE 9 */
-              transform: scale(.75); /* IE 10, Fx 16+, Op 12.1+ */
+      -webkit-transform: scale(0.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: scale(0.75); /* IE 9 */
+              transform: scale(0.75); /* IE 10, Fx 16+, Op 12.1+ */
     }
     li {
       font-size: 1rem;
     }
     a {
-      // had to add because the work nav is 300 not 100
-      // font-weight: 100;
       color: rgba(255, 255, 255, 0.8)
     }
     .dark-current-page {
       border-bottom: .125rem solid rgba(255, 255, 255, 0.8);
     }
 }
-
 
 header.shrink:hover {
   height: 7.5rem;
@@ -410,15 +424,11 @@ header.shrink:hover {
 //--------------------------
 // GLOBAL: Btn Style
 //--------------------------
-
 .global-btn {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 2rem;
   padding-right: 2rem;
-  // Not sure why this doesn't work
-  // width: 400px;
-  // hack to fix height problem
 
   border-top: 1px;
   border-bottom: 1px;
@@ -455,7 +465,6 @@ header.shrink:hover {
 //------------------------------------
 // GLOBAL: Gradient For Header
 //------------------------------------
-
 .section-p-relative{
   position: relative;
 }
@@ -480,7 +489,6 @@ header.shrink:hover {
 //------------------------------------
 // GLOBAL: Footer
 //------------------------------------
-
 footer {
   height: 6rem;
   width: 100%;
@@ -506,7 +514,7 @@ footer {
       align-items: center;
       box-sizing: border-box;
       img {
-        margin-right: .75rem;
+        margin-right: 0.75rem;
       }
       a {
         text-decoration: none;
@@ -522,8 +530,7 @@ footer {
 //------------------------------------
 // HOME PAGE: Styles
 //------------------------------------
-
-// Section: Hero
+// SECTION: Hero
 .home-hero {
   background-color: #582694;
   position: relative;
@@ -547,7 +554,7 @@ footer {
   display: none;
 }
 
-// Home Page Left Sections
+// SECTION: Home Page Left
 .section-content-home {
     max-width: 71.25rem;
     justify-content: flex-start;
@@ -587,7 +594,6 @@ footer {
   background: -moz-linear-gradient(rgba(220, 220, 220, 1.0), rgba(180, 180, 180, 1.0));
   background: -webkit-linear-gradient(rgba(220, 220, 220, 1.0), rgba(180, 180, 180, 1.0));
   background: -ms-linear-gradient(rgba(220, 220, 220, 1.0), rgba(180, 180, 180, 1.0));
-
 }
 
 .top-gradient {
@@ -621,16 +627,17 @@ footer {
 }
 
 .section-work-content {
+  background-color: #582694;
   max-width: 34.75rem;
+
   padding-left: 3.125rem;
   padding-right: 3.125rem;
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
+  box-sizing: border-box;
 
   margin-left: 2rem;
   margin-right: 2rem;
-
-  box-sizing: border-box;
 
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -640,7 +647,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
 
-  background-color: #582694;
+  // Box Shadow
   box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.5);
     h1 {
       margin-bottom: 2.125rem;
@@ -655,13 +662,12 @@ footer {
 //------------------------------------
 // LEADERSHIP PAGE: Styles
 //------------------------------------
-
-// Section: Hero
+// SECTION: Hero
 .leadership-hero {
   background-color: #FC4C48;
 }
 
-// Section: Executive
+// SECTION: Executive
 .section-content-executive {
     max-width: 71.25rem;
     justify-content: flex-start;
@@ -677,6 +683,7 @@ footer {
       }
 }
 
+// SECTION: Executive
 .executive-img {
   width: 34.75rem;
 }
@@ -686,7 +693,7 @@ footer {
 }
 
 
-// Section: Mentor
+// SECTION: Mentor
 .section-mentor-bg {
   background-image: url('../../img/MM_class_photo.png');
   background-position: center;
@@ -703,7 +710,6 @@ footer {
 //------------------------------------
 // PROCESS PAGE: Styles
 //------------------------------------
-
 // Hide Responsive Image
 .process-img-small {
   display: none;
@@ -719,9 +725,12 @@ footer {
   flex-wrap: wrap;
 }
 
-
 .three-step-intro {
-  display: flex;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
@@ -755,10 +764,10 @@ footer {
   width: 12.5rem;
     img {
       width: 100%;
-      margin-bottom: .75rem;
+      margin-bottom: 0.75rem;
     }
     h1 {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 }
 
@@ -786,7 +795,7 @@ footer {
   box-sizing: border-box;
   padding-left: 3rem;
     img {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
     h1 {
       margin-bottom: 1rem;
@@ -831,8 +840,8 @@ footer {
   display: -ms-flexbox;  /* TWEENER - IE 10 */
   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-  flex-wrap: wrap;
 
+  flex-wrap: wrap;
   justify-content: space-between;
 
     .design-num-container {
@@ -843,7 +852,7 @@ footer {
       padding-left: 2rem;
       padding-right: 2rem;
         h1 {
-          margin-bottom: .625rem;
+          margin-bottom: 0.625rem;
         }
     }
     .design-num-container:first-child {
@@ -861,7 +870,6 @@ footer {
 //------------------------------------
 // ABOUT PAGE: Styles
 //------------------------------------
-
 // Section: Hero
 .about-hero-bg {
   background-color: #64B4B6;
@@ -884,11 +892,15 @@ footer {
 }
 
 .hats-img-margin {
-  margin-bottom: .75rem;
+  margin-bottom: 0.75rem;
 }
 
 .indiv-img-container-favs {
-  display: flex;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
   flex-wrap: wrap;
   justify-content: center;
 
@@ -901,11 +913,11 @@ footer {
     img {
       width: 100%;
       max-width: 13rem;
-      margin-bottom: .75rem;
+      margin-bottom: 0.75rem;
     }
     h1 {
       width: 100%;
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
 }
 
@@ -914,7 +926,6 @@ footer {
 //------------------------------------
 // PROJECT PAGE
 //------------------------------------
-
 .mm-logo-hide {
   display: none;
 }
@@ -922,16 +933,6 @@ footer {
 .mm-logo-show {
   display: block;
 }
-
-// .flex-center-all {
-//   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-//   display: -ms-flexbox;  /* TWEENER - IE 10 */
-//   display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-//   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-//
-//   justify-content: center;
-//   align-items: center;
-// }
 
 .projects-parent {
   width: 100%;
@@ -957,13 +958,15 @@ footer {
   padding-left: 1rem;
   padding-right: 1rem;
 
-  // margin-left: 1rem;
-  // margin-right: 1rem;
   margin-bottom: 5.5rem;
 
-  display: flex;
-  align-items: flex-start;
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
   flex-wrap: wrap;
+  align-items: flex-start;
 
     img {
       width: 100%;
@@ -973,7 +976,7 @@ footer {
       line-height: 1.5rem;
     }
     .d-wo-h-1-dp-l {
-      margin-bottom: .75rem;
+      margin-bottom: 0.75rem;
     }
 }
 
@@ -1009,11 +1012,11 @@ footer {
     // PROCESS PAGE
     //------------------------------------
     .three-img-arrow-padding {
-      transform: scale(.8);
+      -webkit-transform: scale(.8); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: scale(.8); /* IE 9 */
+              transform: scale(.8);
       margin-left: 1rem;
       margin-right: 1rem;
-      // margin-top: 4.625rem;
-      // margin-bottom: 2.75rem;
     }
 }
 
@@ -1066,7 +1069,6 @@ footer {
     .section-content-executive {
       .section-content-left {
         .d-02-h-2-w-l {
-          // font-size: ;
         }
         .d-02-p-body-section-p-l {
           font-size: 1rem;
@@ -1095,7 +1097,7 @@ footer {
       display: block;
       width: 3.75rem;
     }
-    // revemo Nav List
+    // remove Nav List
     .nav-list {
       display: none;
     }
@@ -1115,21 +1117,21 @@ footer {
     header {
      height: 4rem;
      padding-left: 1rem;
-     padding-right: .25rem;
+     padding-right: 0.25rem;
      background-color: rgba(17, 16, 47, 0.1);
     }
     .mm-logo {
-     -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-         -ms-transform: scale(.75); /* IE 9 */
-             transform: scale(.75); /* IE 10, Fx 16+, Op 12.1+ */
+     -webkit-transform: scale(0.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+         -ms-transform: scale(0.75); /* IE 9 */
+             transform: scale(0.75); /* IE 10, Fx 16+, Op 12.1+ */
     }
     header.shrink:hover {
       height: 4rem;
-      background-color: rgba(17, 16, 47, .625);
+      background-color: rgba(17, 16, 47, 0.625);
         .mm-logo {
-          -webkit-transform: scale(.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-              -ms-transform: scale(.75); /* IE 9 */
-                  transform: scale(.75); /* IE 10, Fx 16+, Op 12.1+ */
+          -webkit-transform: scale(0.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+              -ms-transform: scale(0.75); /* IE 9 */
+                  transform: scale(0.75); /* IE 10, Fx 16+, Op 12.1+ */
         }
     }
 
@@ -1163,6 +1165,9 @@ footer {
       font-size: 1.5rem;
     }
     .d-02-p-body-section-p-c {
+      font-size: 1rem;
+    }
+    .d-03-p-w-l {
       font-size: 1rem;
     }
 
@@ -1223,7 +1228,7 @@ footer {
       //------------------------------------
       // PROCESS PAGE
       //------------------------------------
-      // A few of My Skills Section
+      // SECTION: A few of My Skills
       .skills-flex {
         flex-wrap: wrap;
         justify-content: center;
@@ -1235,7 +1240,12 @@ footer {
         margin-left: 2rem;
         margin-right: 2rem;
         margin-bottom: 4rem;
-        display: flex;
+
+        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+        display: -ms-flexbox;  /* TWEENER - IE 10 */
+        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
         flex-wrap: wrap;
         justify-content: center;
           h1, ul {
@@ -1254,7 +1264,12 @@ footer {
           .indiv-img-container{
             width: 100%;
             margin-bottom: 3.5rem;
-            display: flex;
+
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
             flex-wrap: wrap;
             justify-content: center;
               .process-img {
@@ -1270,7 +1285,7 @@ footer {
           }
       }
 
-      // Design by Numbers Section
+      // SECTION: Design by Numbers
       .design-num {
         flex-wrap: wrap;
         justify-content: center;
@@ -1292,7 +1307,7 @@ footer {
       .project {
         margin-bottom: 3rem;
           img {
-            margin-bottom: .75rem;
+            margin-bottom: 0.75rem;
           }
       }
       .section-padding-top-work {
@@ -1315,7 +1330,12 @@ footer {
             max-width: 28rem;
             margin-left: 2rem;
             margin-right: 2rem;
-            display: flex;
+
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
             flex-wrap: wrap;
             justify-content: center;
               p {
@@ -1363,7 +1383,11 @@ footer {
     // GLOBAL: Letter Sections
     //------------------------------------
     .section-content-home-mobile {
-      display: flex;
+      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;  /* TWEENER - IE 10 */
+      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+      display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
       flex-wrap: wrap;
       justify-content: center;
         .responsive-letter {
@@ -1376,13 +1400,18 @@ footer {
         }
         .responsive-headshot {
           width: 10.5rem;
-          margin-bottom: .5rem;
+          margin-bottom: 0.5rem;
         }
         .section-content-home-left {
           max-width: 26rem;
           margin-left: 2.5rem;
           margin-right: 2.5rem;
-          display: flex;
+
+          display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+          display: -ms-flexbox;  /* TWEENER - IE 10 */
+          display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+          display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
           flex-wrap: wrap;
           justify-content: center;
             h1, p {
