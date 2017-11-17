@@ -784,6 +784,7 @@ footer {
 
 .skills-flex {
   max-width: 71.25rem;
+  padding-left: 10rem;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -793,7 +794,7 @@ footer {
   max-width: 66.25rem;
 
   box-sizing: border-box;
-  padding-left: 3rem;
+  padding-left: 1.5rem;
     img {
       margin-bottom: 0.5rem;
     }
@@ -1018,6 +1019,10 @@ footer {
       margin-left: 1rem;
       margin-right: 1rem;
     }
+
+    .skills-flex {
+      padding-left: 7rem;
+    }
 }
 
 
@@ -1062,6 +1067,11 @@ footer {
     .indiv-img-container {
       width: 20%;
     }
+
+    .skills-flex {
+      padding-left: 5rem;
+    }
+
 
     //------------------------------------
     // LEADERSHIP PAGE
@@ -1158,6 +1168,27 @@ footer {
       padding-bottom: 3rem;
     }
 
+    .section-content-home-mobile {
+      .section-content-home-left {
+        margin-left: 2rem;
+          img.responsive-letter {
+            margin-left: 1.5rem;
+            width: 14rem;
+          }
+          h1.d-01-h-1-w-l {
+            font-size: 2rem;
+          }
+          p.d-02-p-body-section-p-l, p.d-01-p-body-hero-w-l {
+            font-size: 1rem;
+            font-weight: 300;;
+          }
+      }
+    }
+    h1.d-01-h-1-w-c {
+      font-size: 2.25rem;
+    }
+
+
     //------------------------------------
     // GLOBAL: Font Sizes
     //------------------------------------
@@ -1171,204 +1202,185 @@ footer {
       font-size: 1rem;
     }
 
+
     //------------------------------------
-    // GLBAL: Responsive Letters
+    // GLOBAL: Footer
     //------------------------------------
-      .section-content-home-mobile {
-        .section-content-home-left {
-          margin-left: 2rem;
-            img.responsive-letter {
-              margin-left: 1.5rem;
-              width: 14rem;
-            }
-            h1.d-01-h-1-w-l {
-              font-size: 2rem;
-            }
-            p.d-02-p-body-section-p-l, p.d-01-p-body-hero-w-l {
-              font-size: 1rem;
-              font-weight: 300;;
-            }
+
+    footer {
+      div {
+        .responsive-hide-email {
+          display: none;
         }
       }
-      h1.d-01-h-1-w-c {
-        font-size: 2.25rem;
-      }
+    }
 
-      //------------------------------------
-      // GLOBAL: Footer
-      //------------------------------------
-
-      footer {
-        div {
-          .responsive-hide-email {
-            display: none;
-          }
-        }
-      }
-
-      .btn-padding-small {
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-      }
+    .btn-padding-small {
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+    }
 
 
-      //------------------------------------
-      // HOME PAGE: Responsive Home Hero
-      //------------------------------------
-      .hero-content {
-        max-width: 30.1875rem;
-      }
-      .home-hero{
-        p.d-01-p-body-hero-w-l {
-          font-size: 1rem;
-          font-weight: 300;
-        }
-      }
-
-      //------------------------------------
-      // PROCESS PAGE
-      //------------------------------------
-      // SECTION: A few of My Skills
-      .skills-flex {
-        flex-wrap: wrap;
-        justify-content: center;
-      }
-      .skills-container {
-        width: 100%;
-        padding-left: 0;
-
-        margin-left: 2rem;
-        margin-right: 2rem;
-        margin-bottom: 4rem;
-
-        display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-        display: -ms-flexbox;  /* TWEENER - IE 10 */
-        display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-        display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-
-        flex-wrap: wrap;
-        justify-content: center;
-          h1, ul {
-            width: 100%;
-            text-align: center;
-          }
-      }
-
-      //Global Three Image container
-      .three-img-container {
-        flex-wrap: wrap;
-        margin-bottom: 2rem;
-          .three-img-arrow-padding {
-            display: none;
-          }
-          .indiv-img-container{
-            width: 100%;
-            margin-bottom: 3.5rem;
-
-            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-            display: -ms-flexbox;  /* TWEENER - IE 10 */
-            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-
-            flex-wrap: wrap;
-            justify-content: center;
-              .process-img {
-                display: none;
-              }
-              .process-img-small {
-                display: block;
-                max-width: 9.875rem;
-              }
-              div {
-                width: 100%;
-              }
-          }
-      }
-
-      // SECTION: Design by Numbers
-      .design-num {
-        flex-wrap: wrap;
-        justify-content: center;
-          .design-num-container {
-            width: 100%;
-            margin-bottom: 4rem;
-          }
-          .design-num-container:first-child {
-            margin-bottom: 4rem;
-          }
-      }
-      .num-caption {
-        margin-top: 2rem;
-      }
-
-      //------------------------------------
-      // WORK PAGE
-      //------------------------------------
-      .project {
-        margin-bottom: 3rem;
-          img {
-            margin-bottom: 0.75rem;
-          }
-      }
-      .section-padding-top-work {
-        padding-top: 6.5rem;
-      }
-      .d-wo-h-1-dp-l {
-        font-size: 1.125rem;
-      }
-      .d-wo-p-dp-l {
+    //------------------------------------
+    // HOME PAGE: Responsive Home Hero
+    //------------------------------------
+    .hero-content {
+      max-width: 30.1875rem;
+    }
+    .home-hero{
+      p.d-01-p-body-hero-w-l {
         font-size: 1rem;
+        font-weight: 300;
       }
+    }
 
-      //------------------------------------
-      // LEADERSHIP PAGE
-      //------------------------------------
-      .section-content-executive {
-        justify-content: center;
-        flex-wrap: wrap;
-          .section-content-left {
-            max-width: 28rem;
-            margin-left: 2rem;
-            margin-right: 2rem;
+    //------------------------------------
+    // PROCESS PAGE
+    //------------------------------------
+    // SECTION: A few of My Skills
+    .skills-flex {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .skills-container {
+      width: 100%;
+      padding-left: 0;
 
-            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-            display: -ms-flexbox;  /* TWEENER - IE 10 */
-            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+      margin-left: 2rem;
+      margin-right: 2rem;
+      margin-bottom: 4rem;
 
-            flex-wrap: wrap;
-            justify-content: center;
-              p {
-                margin-bottom: 2rem;
-              }
-          }
-          .d-02-p-body-section-p-l {
-            text-align: center;
-          }
-      }
-      .executive-img {
-        display: none;
-      }
-      .executive-img-small {
-        display: block;
-        width: 100%;
-        margin-bottom: 2rem;
-      }
+      display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+      display: -ms-flexbox;  /* TWEENER - IE 10 */
+      display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+      display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 
-      //------------------------------------
-      // ABOUT PAGE
-      //------------------------------------
-      // Favs Section
-      .indiv-img-container-favs{
-        padding-left: 1rem;
-        padding-right: 1rem;
-        margin-bottom: 3.125rem;
-          img {
-            margin-bottom: 1.25rem;
-          }
-      }
+      flex-wrap: wrap;
+      justify-content: center;
+        h1, ul {
+          width: 100%;
+          text-align: center;
+        }
+    }
+
+    .skills-flex {
+      padding-left: 0rem;
+    }
 
 
+    //Global Three Image container
+    .three-img-container {
+      flex-wrap: wrap;
+      margin-bottom: 2rem;
+        .three-img-arrow-padding {
+          display: none;
+        }
+        .indiv-img-container{
+          width: 100%;
+          margin-bottom: 3.5rem;
+
+          display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+          display: -ms-flexbox;  /* TWEENER - IE 10 */
+          display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+          display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+          flex-wrap: wrap;
+          justify-content: center;
+            .process-img {
+              display: none;
+            }
+            .process-img-small {
+              display: block;
+              max-width: 9.875rem;
+            }
+            div {
+              width: 100%;
+            }
+        }
+    }
+
+    // SECTION: Design by Numbers
+    .design-num {
+      flex-wrap: wrap;
+      justify-content: center;
+        .design-num-container {
+          width: 100%;
+          margin-bottom: 4rem;
+        }
+        .design-num-container:first-child {
+          margin-bottom: 4rem;
+        }
+    }
+    .num-caption {
+      margin-top: 2rem;
+    }
+
+    //------------------------------------
+    // WORK PAGE
+    //------------------------------------
+    .project {
+      margin-bottom: 3rem;
+        img {
+          margin-bottom: 0.75rem;
+        }
+    }
+    .section-padding-top-work {
+      padding-top: 6.5rem;
+    }
+    .d-wo-h-1-dp-l {
+      font-size: 1.125rem;
+    }
+    .d-wo-p-dp-l {
+      font-size: 1rem;
+    }
+
+    //------------------------------------
+    // LEADERSHIP PAGE
+    //------------------------------------
+    .section-content-executive {
+      justify-content: center;
+      flex-wrap: wrap;
+        .section-content-left {
+          max-width: 28rem;
+          margin-left: 2rem;
+          margin-right: 2rem;
+
+          display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+          display: -ms-flexbox;  /* TWEENER - IE 10 */
+          display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+          display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+          flex-wrap: wrap;
+          justify-content: center;
+            p {
+              margin-bottom: 2rem;
+            }
+        }
+        .d-02-p-body-section-p-l {
+          text-align: center;
+        }
+    }
+    .executive-img {
+      display: none;
+    }
+    .executive-img-small {
+      display: block;
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+
+    //------------------------------------
+    // ABOUT PAGE
+    //------------------------------------
+    // Favs Section
+    .indiv-img-container-favs{
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-bottom: 3.125rem;
+        img {
+          margin-bottom: 1.25rem;
+        }
+    }
 }
 
 
