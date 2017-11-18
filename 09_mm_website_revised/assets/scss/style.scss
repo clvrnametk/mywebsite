@@ -546,7 +546,7 @@ footer {
 }
 
 .down-arrow {
-  cursor: pointer;
+  // cursor: pointer;
   width: 4.25rem;
 }
 
@@ -608,6 +608,7 @@ footer {
 
   position: absolute;
   top: 0;
+  left: 0;
   z-index: 0;
 }
 
@@ -623,6 +624,7 @@ footer {
 
   position: absolute;
   bottom: 0;
+  left: 0;
   z-index: 0;
 }
 
@@ -1444,7 +1446,7 @@ footer {
     }
 
     .down-arrow-small {
-      cursor: pointer;
+      // cursor: pointer;
       width: 3.25rem;
       display: block;
     }
