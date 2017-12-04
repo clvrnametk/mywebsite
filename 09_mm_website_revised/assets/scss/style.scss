@@ -971,16 +971,33 @@ footer {
   flex-wrap: wrap;
   align-items: flex-start;
 
-    img {
-      width: 100%;
-      margin-bottom: 1.5rem;
-    }
+    // img {
+    //   width: 100%;
+    //   // margin-bottom: 1.5rem;
+    // }
     .d-wo-h-2-p-l {
       line-height: 1.5rem;
     }
     .d-wo-h-1-dp-l {
       margin-bottom: 0.75rem;
     }
+}
+
+.project-children {
+  position: relative;
+}
+
+.project-img {
+  width: 100%;
+}
+
+.desc-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 255, 255, 0.75);
 }
 
 
@@ -1102,7 +1119,7 @@ footer {
 @media screen and (max-width: 48rem)
                {
     //------------------------------------
-    // GLOBAL NAV
+    // RESPONSIVE: GLOBAL NAV
     //------------------------------------
     // Bring in Hamburger
     .nav-hamburger {
@@ -1148,7 +1165,7 @@ footer {
     }
 
     //------------------------------------
-    // GLOBAL: Responsive Letters
+    // RESPONSIVE: GLOBAL: Responsive Letters
     //------------------------------------
     .section-padding-responsive-s {
       padding-bottom: 6rem;
@@ -1192,7 +1209,7 @@ footer {
 
 
     //------------------------------------
-    // GLOBAL: Font Sizes
+    // RESPONSIVE: GLOBAL: Font Sizes
     //------------------------------------
     .d-02-h-2-w-c {
       font-size: 1.5rem;
@@ -1206,7 +1223,7 @@ footer {
 
 
     //------------------------------------
-    // GLOBAL: Footer
+    // RESPONSIVE: GLOBAL: Footer
     //------------------------------------
 
     footer {
@@ -1224,7 +1241,7 @@ footer {
 
 
     //------------------------------------
-    // HOME PAGE: Responsive Home Hero
+    // RESPONSIVE: HOME PAGE: Responsive Home Hero
     //------------------------------------
     .hero-content {
       max-width: 30.1875rem;
@@ -1237,7 +1254,7 @@ footer {
     }
 
     //------------------------------------
-    // PROCESS PAGE
+    // RESPONSIVE: ROCESS PAGE
     //------------------------------------
     // SECTION: A few of My Skills
     .skills-flex {
@@ -1318,7 +1335,7 @@ footer {
     }
 
     //------------------------------------
-    // WORK PAGE
+    // RESPONSIVE: WORK PAGE
     //------------------------------------
     .project {
       margin-bottom: 3rem;
@@ -1336,8 +1353,9 @@ footer {
       font-size: 1rem;
     }
 
+
     //------------------------------------
-    // LEADERSHIP PAGE
+    // RESPONSIVE: LEADERSHIP PAGE
     //------------------------------------
     .section-content-executive {
       justify-content: center;
@@ -1468,6 +1486,15 @@ footer {
       p {
         font-size: 1rem;
       }
+    }
+
+    //------------------------------------
+    // WORK PAGE
+    //------------------------------------
+    .project {
+      width: 100%;
+      padding-left: 1.75rem;
+      padding-right: 1.75rem;
     }
 }
 

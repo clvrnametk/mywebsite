@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:100,300,400,500,700,900);
+@import url(https://use.fontawesome.com/55f0471c01.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -81,6 +82,14 @@ table {
   line-height: 1.0;
   text-align: center;
   color: #ffffff; }
+
+.d-01-h-1-dp-c {
+  font-family: "Roboto Slab", serif;
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 1.0;
+  text-align: center;
+  color: #181743; }
 
 .d-01-p-body-hero-w-l {
   font-family: "Roboto", sans-serif;
@@ -256,6 +265,14 @@ table {
   font-weight: 300;
   line-height: 1.33;
   text-align: left;
+  color: #181743; }
+
+.d-wo-p-dp-c {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.33;
+  text-align: center;
   color: #181743; }
 
 .m-g-nav-g-l {
@@ -1153,13 +1170,24 @@ footer {
   /* NEW, Spec - Firefox, Chrome, Opera */
   flex-wrap: wrap;
   align-items: flex-start; }
-  .project img {
-    width: 100%;
-    margin-bottom: 1.5rem; }
   .project .d-wo-h-2-p-l {
     line-height: 1.5rem; }
   .project .d-wo-h-1-dp-l {
     margin-bottom: 0.75rem; }
+
+.project-children {
+  position: relative; }
+
+.project-img {
+  width: 100%; }
+
+.desc-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(20, 255, 255, 0.75); }
 
 @media screen and (max-width: 64rem) {
   h1.d-01-h-1-w-l {
@@ -1470,7 +1498,12 @@ footer {
   .section-work-content h1 {
     font-size: 1.5rem; }
   .section-work-content p {
-    font-size: 1rem; } }
+    font-size: 1rem; }
+
+  .project {
+    width: 100%;
+    padding-left: 1.75rem;
+    padding-right: 1.75rem; } }
 @media screen and (max-width: 28.75rem) {
   p.no-stealing span {
     display: none; }

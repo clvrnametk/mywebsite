@@ -1,5 +1,6 @@
 // Google Font Import
 @import url(https://fonts.googleapis.com/css?family=Roboto+Slab:700|Roboto:100,300,400,500,700,900);
+@import url(https://use.fontawesome.com/55f0471c01.css);
 
 
 
@@ -66,6 +67,15 @@ $white: #ffffff;
 	line-height: 1.0;
 	text-align: center;
 	color: $white;
+}
+
+.d-01-h-1-dp-c {
+	font-family: $RobotoSlab;
+	font-size: 3rem;
+	font-weight: bold;
+	line-height: 1.0;
+	text-align: center;
+	color: #181743;
 }
 
 .d-01-p-body-hero-w-l {
@@ -265,6 +275,15 @@ $white: #ffffff;
 	font-weight: 300;
 	line-height: 1.33;
 	text-align: left;
+	color: #181743;
+}
+
+.d-wo-p-dp-c {
+	font-family: $Roboto;
+	font-size: 1.25rem;
+	font-weight: 300;
+	line-height: 1.33;
+	text-align: center;
 	color: #181743;
 }
 
