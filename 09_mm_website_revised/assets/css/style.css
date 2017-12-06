@@ -251,6 +251,14 @@ table {
   text-align: left;
   color: #181743; }
 
+.d-wo-h-1-w-l {
+  font-family: "Roboto Slab", serif;
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.125;
+  text-align: left;
+  color: #ffffff; }
+
 .d-wo-h-2-p-l {
   font-family: "Roboto", sans-serif;
   font-size: .875rem;
@@ -259,6 +267,14 @@ table {
   text-align: left;
   color: #9d9ce2; }
 
+.d-wo-h-2-w-l {
+  font-family: "Roboto", sans-serif;
+  font-size: .875rem;
+  font-weight: bold;
+  line-height: 1.71;
+  text-align: left;
+  color: #ffffff; }
+
 .d-wo-p-dp-l {
   font-family: "Roboto", sans-serif;
   font-size: 1.125rem;
@@ -266,6 +282,14 @@ table {
   line-height: 1.33;
   text-align: left;
   color: #181743; }
+
+.d-wo-p-w-l {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.33;
+  text-align: left;
+  color: #ffffff; }
 
 .d-wo-p-dp-c {
   font-family: "Roboto", sans-serif;
@@ -443,6 +467,9 @@ body {
 
 .section-padding-top-L {
   padding-top: 14rem; }
+
+.section-padding-bottom-S {
+  padding-bottom: 6rem; }
 
 .section-padding-bottom-L {
   padding-bottom: 14rem; }
@@ -823,7 +850,7 @@ footer {
       margin-right: 0.75rem; }
     footer div a {
       text-decoration: none; }
-    footer div p.d-g-footer-p-l, footer div .d-g-footer-dp-l {
+    footer div .padding-left-s {
       margin-right: 2rem; }
 
 .home-hero {
@@ -1136,9 +1163,14 @@ footer {
 .mm-logo-show {
   display: block; }
 
+.project-header h1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-bottom: .75rem; }
+
 .projects-parent {
   width: 100%;
-  max-width: 75rem;
+  max-width: 275rem;
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
@@ -1159,7 +1191,7 @@ footer {
   box-sizing: border-box;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-bottom: 5.5rem;
+  margin-bottom: 2rem;
   display: -webkit-box;
   /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;
@@ -1169,7 +1201,7 @@ footer {
   display: flex;
   /* NEW, Spec - Firefox, Chrome, Opera */
   flex-wrap: wrap;
-  align-items: flex-start; }
+  align-items: center; }
   .project .d-wo-h-2-p-l {
     line-height: 1.5rem; }
   .project .d-wo-h-1-dp-l {
@@ -1179,15 +1211,113 @@ footer {
   position: relative; }
 
 .project-img {
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
 
 .desc-overlay {
   width: 100%;
   height: 100%;
+  box-sizing: border-box;
+  padding-left: .375rem;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(20, 255, 255, 0.75); }
+  background-color: rgba(246, 1, 108, 0);
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  flex-wrap: wrap;
+  align-content: center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .desc-overlay h1, .desc-overlay h2, .desc-overlay p {
+    width: 100%;
+    color: rgba(255, 255, 255, 0);
+    cursor: pointer;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .desc-overlay h1 {
+    margin-bottom: 1.75rem; }
+  .desc-overlay .divider-line {
+    width: 3rem;
+    height: .25rem;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: .5rem;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+
+.desc-overlay:hover {
+  background-color: rgba(246, 1, 108, 0.85);
+  padding-left: 2.25rem; }
+  .desc-overlay:hover h1, .desc-overlay:hover h2, .desc-overlay:hover p {
+    width: 100%;
+    color: white; }
+  .desc-overlay:hover .divider-line {
+    background-color: white; }
+
+.desc-overlay-soon {
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-left: .375rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(100, 180, 182, 0);
+  display: -webkit-box;
+  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;
+  /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;
+  /* NEW, Spec - Firefox, Chrome, Opera */
+  flex-wrap: wrap;
+  align-content: center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+  .desc-overlay-soon h1, .desc-overlay-soon h2, .desc-overlay-soon p {
+    width: 100%;
+    color: rgba(255, 255, 255, 0);
+    cursor: default;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .desc-overlay-soon h1 {
+    margin-bottom: 1.75rem; }
+  .desc-overlay-soon .divider-line {
+    width: 3rem;
+    height: .25rem;
+    background-color: rgba(255, 255, 255, 0);
+    margin-bottom: .5rem;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+
+.desc-overlay-soon:hover {
+  background-color: rgba(100, 180, 182, 0.85);
+  padding-left: 2.25rem; }
+  .desc-overlay-soon:hover h1, .desc-overlay-soon:hover h2, .desc-overlay-soon:hover p {
+    width: 100%;
+    color: white; }
+  .desc-overlay-soon:hover .divider-line {
+    background-color: white; }
 
 @media screen and (max-width: 64rem) {
   h1.d-01-h-1-w-l {
@@ -1207,7 +1337,10 @@ footer {
     margin-right: 1rem; }
 
   .skills-flex {
-    padding-left: 7rem; } }
+    padding-left: 7rem; }
+
+  .desc-overlay h1, .desc-overlay-soon h1 {
+    font-size: 1.75rem; } }
 @media screen and (max-width: 55rem) {
   footer {
     padding-left: 1.5rem;
@@ -1232,7 +1365,14 @@ footer {
     font-size: 1rem; }
 
   .executive-img {
-    width: 24rem; } }
+    width: 24rem; }
+
+  .desc-overlay h2, .desc-overlay-soon h2 {
+    font-size: .7625rem; }
+  .desc-overlay h1, .desc-overlay-soon h1 {
+    font-size: 1.5rem; }
+  .desc-overlay p, .desc-overlay-soon p {
+    font-size: 1.0rem; } }
 @media screen and (max-width: 48rem) {
   .nav-hamburger {
     display: block;
@@ -1442,7 +1582,16 @@ footer {
     padding-right: 1rem;
     margin-bottom: 3.125rem; }
     .indiv-img-container-favs img {
-      margin-bottom: 1.25rem; } }
+      margin-bottom: 1.25rem; }
+
+  .desc-overlay h2, .desc-overlay-soon h2 {
+    font-size: .7625rem; }
+  .desc-overlay h1, .desc-overlay-soon h1 {
+    font-size: 1.25rem; }
+  .desc-overlay p, .desc-overlay-soon p {
+    font-size: .875rem; }
+  .desc-overlay .divider-line, .desc-overlay-soon .divider-line {
+    height: .1875rem; } }
 @media screen and (max-width: 41.25rem) {
   .section-content-home-mobile {
     display: -webkit-box;
@@ -1502,13 +1651,32 @@ footer {
 
   .project {
     width: 100%;
-    padding-left: 1.75rem;
-    padding-right: 1.75rem; } }
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-bottom: 1.25rem; }
+
+  .desc-overlay h2, .desc-overlay-soon h2 {
+    font-size: .875rem; }
+  .desc-overlay h1, .desc-overlay-soon h1 {
+    font-size: 2rem; }
+  .desc-overlay p, .desc-overlay-soon p {
+    font-size: 1.125rem; }
+  .desc-overlay .divider-line, .desc-overlay-soon .divider-line {
+    height: .25rem; } }
 @media screen and (max-width: 28.75rem) {
   p.no-stealing span {
     display: none; }
 
   .d-01-p-body-hero-w-l span {
-    display: none; } }
+    display: none; }
+
+  .desc-overlay h2, .desc-overlay-soon h2 {
+    font-size: .875rem; }
+  .desc-overlay h1, .desc-overlay-soon h1 {
+    font-size: 1.625rem; }
+  .desc-overlay p, .desc-overlay-soon p {
+    font-size: 1rem; }
+  .desc-overlay .divider-line, .desc-overlay-soon .divider-line {
+    height: .1875rem; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -260,6 +260,15 @@ $white: #ffffff;
 	color: #181743;
 }
 
+.d-wo-h-1-w-l {
+	font-family: $RobotoSlab;
+	font-size: 2rem;
+	font-weight: bold;
+	line-height: 1.125;
+	text-align: left;
+	color: $white;
+}
+
 .d-wo-h-2-p-l {
 	font-family: $Roboto;
 	font-size: .875rem;
@@ -269,6 +278,15 @@ $white: #ffffff;
 	color: #9d9ce2;
 }
 
+.d-wo-h-2-w-l {
+	font-family: $Roboto;
+	font-size: .875rem;
+	font-weight: bold;
+	line-height: 1.71;
+	text-align: left;
+	color: $white;
+}
+
 .d-wo-p-dp-l {
 	font-family: $Roboto;
 	font-size: 1.125rem;
@@ -276,6 +294,15 @@ $white: #ffffff;
 	line-height: 1.33;
 	text-align: left;
 	color: #181743;
+}
+
+.d-wo-p-w-l {
+	font-family: $Roboto;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 1.33;
+	text-align: left;
+	color: $white;
 }
 
 .d-wo-p-dp-c {

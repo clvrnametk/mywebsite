@@ -59,6 +59,9 @@ body {
   padding-top: 14rem;
 }
 
+.section-padding-bottom-S {
+  padding-bottom: 6rem;
+}
 .section-padding-bottom-L {
   padding-bottom: 14rem;
 }
@@ -519,7 +522,7 @@ footer {
       a {
         text-decoration: none;
       }
-      p.d-g-footer-p-l, .d-g-footer-dp-l {
+      .padding-left-s {
         margin-right: 2rem;
       }
     }
@@ -937,9 +940,17 @@ footer {
   display: block;
 }
 
+.project-header {
+  h1 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: .75rem;
+  }
+}
+
 .projects-parent {
   width: 100%;
-  max-width: 75rem;
+  max-width: 275rem;
   padding-left: 1rem;
   padding-right: 1rem;
   box-sizing: border-box;
@@ -961,7 +972,7 @@ footer {
   padding-left: 1rem;
   padding-right: 1rem;
 
-  margin-bottom: 5.5rem;
+  margin-bottom: 2rem;
 
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
   display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -969,7 +980,7 @@ footer {
   display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
 
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
 
     // img {
     //   width: 100%;
@@ -989,17 +1000,144 @@ footer {
 
 .project-img {
   width: 100%;
+  height: 100%;
 }
 
 .desc-overlay {
   width: 100%;
   height: 100%;
+
+  box-sizing: border-box;
+  padding-left: .375rem;
+
   position: absolute;
   top: 0;
   left: 0;
-  background-color: rgba(20, 255, 255, 0.75);
+  background-color: rgba(#F6016C, 0.0);
+
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+  flex-wrap: wrap;
+  align-content: center;
+
+  // Transisiton
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+    h1, h2, p {
+      width: 100%;
+      color: rgba(255, 255, 255, 0.0);
+      cursor: pointer;
+      // Transisiton
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+    h1 {
+      margin-bottom: 1.75rem;
+    }
+    .divider-line {
+      width: 3rem;
+      height: .25rem;
+      background-color: rgba(255, 255, 255, 0.0);
+      margin-bottom: .5rem;
+      // Transisiton
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
 }
 
+.desc-overlay:hover {
+  background-color: rgba(#F6016C, 0.85);
+  padding-left: 2.25rem;
+
+    h1, h2, p {
+      width: 100%;
+      color: rgba(255, 255, 255, 1.0);
+    }
+    .divider-line {
+      background-color: rgba(255, 255, 255, 1.0);
+    }
+}
+
+
+.desc-overlay-soon {
+  cursor: default;
+  width: 100%;
+  height: 100%;
+
+  box-sizing: border-box;
+  padding-left: .375rem;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(#64B4B6, 0.0);
+
+  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  display: -ms-flexbox;  /* TWEENER - IE 10 */
+  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+
+  flex-wrap: wrap;
+  align-content: center;
+
+  // Transisiton
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+    h1, h2, p {
+      width: 100%;
+      color: rgba(255, 255, 255, 0.0);
+      cursor: default;
+      // Transisiton
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+    h1 {
+      margin-bottom: 1.75rem;
+    }
+    .divider-line {
+      width: 3rem;
+      height: .25rem;
+      background-color: rgba(255, 255, 255, 0.0);
+      margin-bottom: .5rem;
+      // Transisiton
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      transition: all 0.2s ease;
+    }
+}
+
+.desc-overlay-soon:hover {
+  background-color: rgba(#64B4B6, 0.85);
+  padding-left: 2.25rem;
+
+    h1, h2, p {
+      width: 100%;
+      color: rgba(255, 255, 255, 1.0);
+    }
+    .divider-line {
+      background-color: rgba(255, 255, 255, 1.0);
+    }
+}
+
+// .coming-soon {
+//   cursor: default;
+// }
 
 
 
@@ -1018,7 +1156,7 @@ footer {
 @media screen and (max-width: 64rem)
                {
     //------------------------------------
-    // GLOBAL: Responsive Letters
+    // RESPONSIVE: GLOBAL: Responsive Letters
     //------------------------------------
     h1.d-01-h-1-w-l {
       font-size: 36px;
@@ -1029,7 +1167,7 @@ footer {
     }
 
     //------------------------------------
-    // PROCESS PAGE
+    // RESPONSIVE: PROCESS PAGE
     //------------------------------------
     .three-img-arrow-padding {
       -webkit-transform: scale(.8); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
@@ -1042,9 +1180,16 @@ footer {
     .skills-flex {
       padding-left: 7rem;
     }
+
+    //------------------------------------
+    // RESPONSIVE: PROJECT PAGE
+    //------------------------------------
+    .desc-overlay, .desc-overlay-soon {
+      h1 {
+        font-size: 1.75rem;
+      }
+    }
 }
-
-
 
 
 //******************************************
@@ -1107,6 +1252,21 @@ footer {
 
     .executive-img {
       width: 24rem;
+    }
+
+    //------------------------------------
+    // RESPONSIVE: PROJECT PAGE
+    //------------------------------------
+    .desc-overlay, .desc-overlay-soon {
+      h2 {
+        font-size: .7625rem;
+      }
+      h1 {
+        font-size: 1.5rem;
+      }
+      p {
+        font-size: 1.0rem;
+      }
     }
 }
 
@@ -1401,6 +1561,24 @@ footer {
           margin-bottom: 1.25rem;
         }
     }
+
+    //------------------------------------
+    // RESPONSIVE: PROJECT PAGE
+    //------------------------------------
+    .desc-overlay, .desc-overlay-soon {
+      h2 {
+        font-size: .7625rem;
+      }
+      h1 {
+        font-size: 1.25rem;
+      }
+      p {
+        font-size: .875rem;
+      }
+      .divider-line {
+        height: .1875rem;
+      }
+    }
 }
 
 
@@ -1491,10 +1669,36 @@ footer {
     //------------------------------------
     // WORK PAGE
     //------------------------------------
+    // .project {
+    //   width: 100%;
+    //   padding-left: 1.75rem;
+    //   padding-right: 1.75rem;
+    // }
+
+    //------------------------------------
+    // RESPONSIVE: PROJECT PAGE
+    //------------------------------------
     .project {
       width: 100%;
-      padding-left: 1.75rem;
-      padding-right: 1.75rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      margin-bottom: 1.25rem
+    }
+
+
+    .desc-overlay, .desc-overlay-soon{
+      h2 {
+        font-size: .875rem;
+      }
+      h1 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.125rem;
+      }
+      .divider-line {
+        height: .25rem;
+      }
     }
 }
 
@@ -1519,5 +1723,21 @@ footer {
           display: none;
         }
     }
-
+    //------------------------------------
+    // RESPONSIVE: PROJECT PAGE
+    //------------------------------------
+    .desc-overlay, .desc-overlay-soon {
+      h2 {
+        font-size: .875rem;
+      }
+      h1 {
+        font-size: 1.625rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .divider-line {
+        height: .1875rem;
+      }
+    }
 }

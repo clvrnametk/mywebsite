@@ -18,6 +18,10 @@ $(document).on ('scroll', function(){
   }
 });
 
+// $('.desc-overlay').hover (function() {
+//   console.log("scroll worked!!");
+//   $(this).toggleClass('project-hover');
+// })
 
 // Accepts any class name
 // var rellax = new Rellax('.rellax');
