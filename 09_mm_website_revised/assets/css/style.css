@@ -1191,16 +1191,7 @@ footer {
   box-sizing: border-box;
   padding-left: 1rem;
   padding-right: 1rem;
-  margin-bottom: 2rem;
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;
-  /* NEW, Spec - Firefox, Chrome, Opera */
-  flex-wrap: wrap; }
+  margin-bottom: 2rem; }
   .project .d-wo-h-2-p-l {
     line-height: 1.5rem; }
   .project .d-wo-h-1-dp-l {
@@ -1535,8 +1526,6 @@ footer {
 
   .project {
     margin-bottom: 3rem; }
-    .project img {
-      margin-bottom: 0.75rem; }
 
   .section-padding-top-work {
     padding-top: 6.5rem; }
@@ -1667,7 +1656,7 @@ footer {
 
   .desc-overlay, .desc-overlay-soon {
     height: auto;
-    padding-top: .25rem;
+    padding-top: .875rem;
     padding-left: 0rem;
     background-color: rgba(246, 1, 108, 0);
     position: static; }

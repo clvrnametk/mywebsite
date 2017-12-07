@@ -974,12 +974,13 @@ footer {
 
   margin-bottom: 2rem;
 
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
-  display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
-
-  flex-wrap: wrap;
+  // display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+  // display: -ms-flexbox;  /* TWEENER - IE 10 */
+  // display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+  // display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+  //
+  // flex-wrap: wrap;
+  // align-content: center;
 
     .d-wo-h-2-p-l {
       line-height: 1.5rem;
@@ -1011,6 +1012,7 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
+
   background-color: rgba(#F6016C, 0.0);
 
   display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
@@ -1495,7 +1497,7 @@ footer {
     .project {
       margin-bottom: 3rem;
         img {
-          margin-bottom: 0.75rem;
+          // margin-bottom: 0.75rem;
         }
     }
     .section-padding-top-work {
@@ -1686,7 +1688,7 @@ footer {
 
     .desc-overlay, .desc-overlay-soon {
       height: auto;
-      padding-top: .25rem;
+      padding-top: .875rem;
       padding-left: 0rem;
       background-color: rgba(#F6016C, 0.0);
 
