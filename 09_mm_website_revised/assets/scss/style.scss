@@ -428,10 +428,10 @@ header.shrink:hover {
 // GLOBAL: Btn Style
 //--------------------------
 .global-btn {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding-top: .875rem;
+  padding-bottom: .875rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 
   border-top: 1px;
   border-bottom: 1px;
@@ -540,7 +540,7 @@ footer {
 }
 
 .hero-content {
-  max-width: 46.625rem;
+  max-width: 38.625rem;
   margin-left: 2rem;
   margin-right: 2rem;
     h1, p {
@@ -559,10 +559,10 @@ footer {
 
 // SECTION: Home Page Left
 .section-content-home {
-    max-width: 71.25rem;
+    max-width: 63.25rem;
     justify-content: flex-start;
       img {
-        max-width: 20.1875rem;
+        max-width: 16.1875rem;
         width: 100%;
       }
       .section-content-home-left {
@@ -635,8 +635,8 @@ footer {
   background-color: #582694;
   max-width: 34.75rem;
 
-  padding-left: 3.125rem;
-  padding-right: 3.125rem;
+  padding-left: 5.125rem;
+  padding-right: 5.125rem;
   padding-top: 3.125rem;
   padding-bottom: 3.125rem;
   box-sizing: border-box;
@@ -660,6 +660,11 @@ footer {
     p {
       margin-bottom: 3.125rem;
     }
+}
+
+.section-work-content-alt {
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
 }
 
 
@@ -746,6 +751,9 @@ footer {
     }
     p {
       max-width: 36rem;
+    }
+    .hats-max-width{
+      max-width: 30rem;
     }
 }
 
@@ -1145,6 +1153,12 @@ footer {
 //******************************************
 
 
+@media screen and (min-width: 100rem)
+               {
+    .project{
+      width: 33.3%;
+    }
+}
 
 
 //******************************************
@@ -1159,9 +1173,22 @@ footer {
       font-size: 36px;
     }
     img.responsive-letter {
-      margin-left: 1rem;
+      margin-left: 4rem;
       width: 16rem;
     }
+
+    .section-content-home-left {
+      margin-left: 5.1875rem;
+    }
+
+    //------------------------------------
+    // RESPONSIVE: GLOBAL: Responsive Letters
+    //------------------------------------
+    // .hero-content {
+    //   .d-01-p-body-hero-w-l {
+    //     font-size: 1.125rem;
+    //   }
+    // }
 
     //------------------------------------
     // RESPONSIVE: PROCESS PAGE
@@ -1411,7 +1438,7 @@ footer {
     }
 
     //------------------------------------
-    // RESPONSIVE: ROCESS PAGE
+    // RESPONSIVE: PROCESS PAGE
     //------------------------------------
     // SECTION: A few of My Skills
     .skills-flex {
@@ -1655,25 +1682,28 @@ footer {
 
     // Work Content Center P text
     .section-work-content {
-      h1 {
-        font-size: 1.5rem;
-      }
-      p {
-        font-size: 1rem;
-      }
+      padding-left: 3.125rem;
+      padding-right: 3.125rem;
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 1rem;
+        }
     }
 
     //------------------------------------
     // RESPONSIVE: PROJECT PAGE
     //------------------------------------
-    .section-padding-top-L {
+    .wo-header-padding {
       padding-top: 2rem;
-        h1 {
-          padding-left: 3.5rem;
-          padding-right: 3.5rem;
-          font-size: 2.5rem;
-        }
+      .wo-header-alt {
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+        font-size: 2.5rem;
+      }
     }
+
 
     .project {
       width: 100%;
@@ -1702,14 +1732,19 @@ footer {
           background-color: rgba(255, 255, 255, 1.0);
         }
         h2 {
-          font-size: .875rem;
+          color: rgba(#9D9CE2, 1.0);
+          font-size: .75rem;
         }
         h1 {
-          font-size: 1.5rem;
+          color: rgba(#181743, 1.0);
+          font-size: 1.25rem;
           margin-bottom: 1rem;
         }
         p {
-          font-size: 1.125rem;
+          color: rgba(#181743, 1.0);
+          font-size: .875rem;
+          font-weight: 500;
+          letter-spacing: .02rem;
         }
         .divider-line {
           height: .125rem;
@@ -1721,7 +1756,11 @@ footer {
       background-color: rgba(#F6016C, 0.0);
       padding-left: 0rem;
 
-        h1, h2, p {
+        h2 {
+          color: rgba(#9D9CE2, 1.0);
+          font-size: .75rem;
+        }
+        h1, p {
           color: rgba(#181743, 1.0);
         }
         .divider-line {

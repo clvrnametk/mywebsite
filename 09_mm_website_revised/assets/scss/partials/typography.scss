@@ -60,6 +60,15 @@ $white: #ffffff;
 	color: $white;
 }
 
+.d-01-h-1-w-l-home {
+	font-family: $RobotoSlab;
+	font-size: 2.125rem;
+	font-weight: bold;
+	line-height: 1.25;
+	text-align: left;
+	color: $white;
+}
+
 .d-01-h-1-w-c {
 	font-family: $RobotoSlab;
 	font-size: 3rem;
@@ -80,7 +89,7 @@ $white: #ffffff;
 
 .d-01-p-body-hero-w-l {
 	font-family: $Roboto;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
   font-weight: 300;
 	line-height: 1.8;
 	text-align: left;
@@ -115,10 +124,20 @@ $white: #ffffff;
 	color: $white;
 }
 
+.d-02-h-2-w-c-small {
+	font-family: $RobotoSlab;
+	font-size: 1.75rem;
+	font-weight: bold;
+	line-height: 1.25;
+	text-align: center;
+	color: $white;
+}
+
 .d-02-p-body-section-w-c {
 	font-family: $Roboto;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
   font-weight: 300;
+	letter-spacing: .04rem;
 	line-height: 1.8;
 	text-align: center;
 	color: $white;
@@ -126,8 +145,9 @@ $white: #ffffff;
 
 .d-02-p-body-section-p-c {
 	font-family: $Roboto;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	font-weight: 300;
+	letter-spacing: .02rem;
 	line-height: 1.8;
 	text-align: center;
 	color: #9696da;
@@ -135,8 +155,9 @@ $white: #ffffff;
 
 .d-02-p-body-section-p-l {
 	font-family: $Roboto;
-	font-size: 1.25rem;
+	font-size: 1.125rem;
 	font-weight: 300;
+	letter-spacing: .04rem;
 	line-height: 1.8;
 	text-align: left;
 	color: #9d9ce2;
@@ -186,6 +207,16 @@ $white: #ffffff;
 	color: #9d9ce2;
 }
 
+.d-03-p-2-p-c-small {
+	font-family: $Roboto;
+	font-size: .875rem;
+	font-weight: 500;
+	letter-spacing: .02rem;
+	line-height: 1.33;
+	text-align: center;
+	color: #9d9ce2;
+}
+
 .d-03-p-w-l {
 	font-family: $Roboto;
 	font-size: 1.125rem;
@@ -194,8 +225,14 @@ $white: #ffffff;
 	color: $white;
 }
 
-.d-03-p-w-l-alt {
-	font-weight: 300;
+.d-03-p-w-l-ul {
+	font-family: $Roboto;
+	font-size: 1rem;
+	font-weight: 400;
+	letter-spacing: .02rem;
+	line-height: 2.22;
+	text-align: left;
+	color: $white;
 }
 
 .d-03-p-2-w-c {
@@ -224,6 +261,16 @@ $white: #ffffff;
 	color: #9d9ce2;
 }
 
+.d-03-p-1-p-c-favs {
+	font-family: $Roboto;
+	font-size: 1rem;
+	font-weight: 300;
+	letter-spacing: .01rem;
+	line-height: 1.55;
+	text-align: center;
+	color: #9d9ce2;
+}
+
 .d-03-caption-p-c {
 	font-family: $Roboto;
 	font-size: .875rem;
@@ -235,8 +282,9 @@ $white: #ffffff;
 
 .d-04-p-btn-w-c {
 	font-family: $Roboto;
-	font-size: 1.125rem;
-  font-weight: 300;
+	font-size: .875rem;
+  font-weight: 400;
+	letter-spacing: .02rem;
 	line-height: 1.56;
 	text-align: center;
 	color: $white;
@@ -244,8 +292,9 @@ $white: #ffffff;
 
 .d-04-p-btn-p-c {
 	font-family: $Roboto;
-	font-size: 1.125rem;
-  font-weight: 300;
+	font-size: .875rem;
+  font-weight: 400;
+	letter-spacing: .02rem;
 	line-height: 1.56;
 	text-align: center;
 	color: #9d9ce2;

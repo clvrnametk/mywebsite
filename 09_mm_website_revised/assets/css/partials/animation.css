@@ -1,4 +1,4 @@
-.home-hero .letter-img-animate, .home-hero h1, .home-hero p, .leadership-hero .letter-img-animate, .leadership-hero h1, .leadership-hero p, .about-hero .letter-img-animate, .about-hero h1, .about-hero p, .process-hero .letter-img-animate, .process-hero h1, .process-hero p {
+.home-hero .letter-img-animate, .home-hero h1, .home-hero p, .leadership-hero .letter-img-animate, .leadership-hero h1, .leadership-hero p, .about-hero-bg .letter-img-animate, .about-hero-bg h1, .about-hero-bg p, .process-hero-bg .letter-img-animate, .process-hero-bg h1, .process-hero-bg p {
   -webkit-animation: fadein 1.2s, moved 2s;
   /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 1.2s, moved 2s;

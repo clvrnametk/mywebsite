@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="162px" height="162px" viewBox="0 0 162 162" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+<svg width="160px" height="160px" viewBox="0 0 160 160" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
     <title>m-P-DT03-200x200</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="ASSET-SHEET" transform="translate(-2013.000000, -1229.000000)">
-            <g id="m-P-DT03-200x200" transform="translate(2015.000000, 1231.000000)">
-                <circle id="Oval-2-Copy" stroke="#F6016C" stroke-width="4" cx="78.8193448" cy="78.8193448" r="78.8193448"></circle>
-                <g id="Group-5" transform="translate(46.610000, 45.820000)">
-                    <rect id="Rectangle-9" stroke="#FFFFFF" stroke-width="2" transform="translate(55.300000, 56.880000) rotate(-270.000000) translate(-55.300000, -56.880000) " x="46.82" y="48.4" width="16.96" height="16.96" rx="4"></rect>
-                    <rect id="Rectangle-9" stroke="#FFFFFF" stroke-width="2" transform="translate(9.480000, 56.560238) rotate(-270.000000) translate(-9.480000, -56.560238) " x="1" y="48.0802381" width="16.96" height="16.96" rx="4"></rect>
-                    <rect id="Rectangle-7-Copy-2" fill="#FFFFFF" transform="translate(55.300000, 39.500000) rotate(-270.000000) translate(-55.300000, -39.500000) " x="47.4" y="38.71" width="15.8" height="1.58"></rect>
-                    <rect id="Rectangle-7-Copy-2" fill="#FFFFFF" transform="translate(9.480000, 39.500000) rotate(-270.000000) translate(-9.480000, -39.500000) " x="1.58" y="38.71" width="15.8" height="1.58"></rect>
-                    <rect id="Rectangle-7-Copy" fill="#FFFFFF" transform="translate(32.390000, 32.390000) rotate(-270.000000) translate(-32.390000, -32.390000) " x="31.6" y="8.69" width="1.58" height="47.4"></rect>
-                    <rect id="Rectangle-7-Copy-2" fill="#FFFFFF" transform="translate(33.180000, 25.280000) rotate(-90.000000) translate(-33.180000, -25.280000) " x="25.28" y="24.49" width="15.8" height="1.58"></rect>
-                    <rect id="Rectangle-9" stroke="#FFFFFF" stroke-width="2" transform="translate(33.180000, 9.480000) rotate(-90.000000) translate(-33.180000, -9.480000) " x="24.7" y="1" width="16.96" height="16.96" rx="4"></rect>
-                </g>
+    <g id="ASSET-SHEET" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-2014.000000, -1230.000000)">
+        <g id="m-P-DT03-200x200" transform="translate(2015.000000, 1231.000000)">
+            <circle id="Oval-2-Copy" stroke="#F6016C" stroke-width="2" cx="78.8193448" cy="78.8193448" r="78.8193448"></circle>
+            <g id="Group-5" transform="translate(46.610000, 45.820000)">
+                <rect id="Rectangle-9" stroke="#FFFFFF" stroke-width="2" transform="translate(55.300000, 56.880000) rotate(-270.000000) translate(-55.300000, -56.880000) " x="46.82" y="48.4" width="16.96" height="16.96" rx="4"></rect>
+                <rect id="Rectangle-9" stroke="#FFFFFF" stroke-width="2" transform="translate(9.480000, 56.560238) rotate(-270.000000) translate(-9.480000, -56.560238) " x="1" y="48.0802381" width="16.96" height="16.96" rx="4"></rect>
+                <rect id="Rectangle-7-Copy-2" fill="#FFFFFF" transform="translate(55.300000, 39.500000) rotate(-270.000000) translate(-55.300000, -39.500000) " x="47.4" y="38.71" width="15.8" height="1.58"></rect>
+                <rect id="Rectangle-7-Copy-2" fill="#FFFFFF" transform="translate(9.480000, 39.500000) rotate(-270.000000) translate(-9.480000, -39.500000) " x="1.58" y="38.71" width="15.8" height="1.58"></rect>
+                <rect id="Rectangle-7-Copy" fill="#FFFFFF" transform="translate(32.390000, 32.390000) rotate(-270.000000) translate(-32.390000, -32.390000) " x="31.6" y="8.69" width="1.58" height="47.4"></rect>
+                <rect id="Rectangle-7-Copy-2" fill="#FFFFFF" transform="translate(33.180000, 25.280000) rotate(-90.000000) translate(-33.180000, -25.280000) " x="25.28" y="24.49" width="15.8" height="1.58"></rect>
+                <rect id="Rectangle-9" stroke="#FFFFFF" stroke-width="2" transform="translate(33.180000, 9.480000) rotate(-90.000000) translate(-33.180000, -9.480000) " x="24.7" y="1" width="16.96" height="16.96" rx="4"></rect>
             </g>
         </g>
     </g>
