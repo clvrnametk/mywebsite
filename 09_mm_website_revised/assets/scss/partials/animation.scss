@@ -2,46 +2,47 @@
 // TRANSITION TEST
 //------------------------------------
 
-.home-hero, .leadership-hero, .about-hero-bg, .process-hero-bg{
-    .letter-img-animate, h1, p {
-      -webkit-animation: fadein 1.2s, moved 2s; /* Safari, Chrome and Opera > 12.1 */
-         -moz-animation: fadein 1.2s, moved 2s; /* Firefox < 16 */
-          -ms-animation: fadein 1.2s, moved 2s; /* Internet Explorer */
-           -o-animation: fadein 1.2s, moved 2s; /* Opera < 12.1 */
-              animation: fadein 1.2s, moved 2s;
-              // animation: move 2s;
 
-              @keyframes fadein {
-                  from { opacity: 0; }
-                  to   { opacity: 1; }
-              }
-
-              @keyframes moved {
-                  from { top: 1000; }
-                  to   { top: 100; }
-              }
-
-
-              /* Firefox < 16 */
-              @-moz-keyframes fadein {
-                  from { opacity: 0; }
-                  to   { opacity: 1; }
-              }
-
-              /* Safari, Chrome and Opera > 12.1 */
-              @-webkit-keyframes fadein {
-                  from { opacity: 0; }
-                  to   { opacity: 1; }
-              }
-
-              @-webkit-keyframes moved {
-                  from { top: 10; }
-                  to   { top: 0; }
-              }
+    .section-content-home-left, .wo-header-padding, .hero-content, .letter-img-animate {
+      -webkit-animation: fadein 1.3s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadein 1.3s; /* Firefox < 16 */
+          -ms-animation: fadein 1.3s; /* Internet Explorer */
+           -o-animation: fadein 1.3s; /* Opera < 12.1 */
+              animation: fadein 1.3s;
     }
+
+.project-img {
+  animation: slideProject 1s;
 }
 
+.nav-slide {
+  animation: navSlide 1.6s;
+}
 
+.bottom-center {
+  animation: arrowSlide 1s;
+}
+
+.bottom-center-slow {
+  animation: arrowSlide 1.6s;
+}
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
@@ -53,4 +54,30 @@
 @-o-keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+
+@keyframes movedLetter {
+  from { transform: translateX(-10%); }
+  to   { transform: translateX(0%); }
+}
+
+@keyframes slide {
+  from { margin-top: 3rem; }
+  to { margin-top: 0rem; }
+}
+
+@keyframes slideProject {
+  from { margin-top: 1rem; }
+  to { margin-top: 0rem; }
+}
+
+@keyframes navSlide {
+  from {transform: translateY(-100%);}
+  to {transform: translateY(0%);}
+}
+
+@keyframes arrowSlide {
+  from {transform: translate(-50%, 250%);}
+  to {transform: translate(-50%, 0%);}
 }

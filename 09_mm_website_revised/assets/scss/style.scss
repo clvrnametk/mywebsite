@@ -156,6 +156,7 @@ header {
       -moz-transition: all 0.2s ease;
       -o-transition: all 0.2s ease;
       transition: all 0.2s ease;
+      transform: scale(0.875);
     }
     li {
       display: inline;
@@ -400,12 +401,12 @@ header {
 }
 
 header.shrink:hover {
-  height: 7.5rem;
+  height: 7rem;
   background-color: rgba(17, 16, 47, 1.0);
     .mm-logo {
-      -webkit-transform: scale(1); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
-          -ms-transform: scale(1); /* IE 9 */
-              transform: scale(1); /* IE 10, Fx 16+, Op 12.1+ */
+      -webkit-transform: scale(0.75); /* Ch <36, Saf 5.1+, iOS < 9.2, An =<4.4.4 */
+          -ms-transform: scale(0.75); /* IE 9 */
+              transform: scale(0.75); /* IE 10, Fx 16+, Op 12.1+ */
     }
     li {
       font-size: 1.125rem;
@@ -550,7 +551,7 @@ footer {
 
 .down-arrow {
   // cursor: pointer;
-  width: 4.25rem;
+  width: 3.5rem;
 }
 
 .down-arrow-small {
