@@ -8,6 +8,7 @@ $(document).on ('scroll', function(){
     // $('header').addClass('shrink shrink-alt');
     $('.mm-logo-work-small').addClass('mm-logo-show');
     $('.mm-logo-work-large').addClass('mm-logo-hide');
+    $('#menuToggle span').removeClass('hamburgerColorAlt');
   }
   else
   {
@@ -15,6 +16,7 @@ $(document).on ('scroll', function(){
     // $('header').removeClass('shrink shrink-alt');
     $('.mm-logo-work-small').removeClass('mm-logo-show');
     $('.mm-logo-work-large').removeClass('mm-logo-hide');
+    $('#menuToggle span').addClass('hamburgerColorAlt');
   }
 });
 
