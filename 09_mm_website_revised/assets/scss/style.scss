@@ -590,6 +590,17 @@ footer {
   background-repeat: no-repeat;
 }
 
+.para-test {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute;
+    img {
+      min-width: 100%;
+      min-height: 100%;
+    }
+}
+
 .section-bg-gradient {
   background: radial-gradient(rgba(220, 220, 220, 1.0), rgba(180, 180, 180, 1.0));
   background: linear-gradient(rgba(220, 220, 220, 1.0), rgba(180, 180, 180, 1.0));
@@ -885,8 +896,19 @@ footer {
 // ABOUT PAGE: Styles
 //------------------------------------
 // Section: Hero
+// .about-hero-bg {
+//   background-color: #64B4B6;
+// }
+
 .about-hero-bg {
-  background-color: #64B4B6;
+  background-image: url('../../img/MM_about_me_dark.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.center-txt {
+  text-align: center;
 }
 
 .responsive-headshot {

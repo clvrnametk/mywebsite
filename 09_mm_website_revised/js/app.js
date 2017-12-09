@@ -24,4 +24,6 @@ $(document).on ('scroll', function(){
 // })
 
 // Accepts any class name
-// var rellax = new Rellax('.rellax');
+var rellax = new Rellax('.rellax',{
+  // center: true;
+});

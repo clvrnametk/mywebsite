@@ -939,6 +939,15 @@ footer {
   background-size: cover;
   background-repeat: no-repeat; }
 
+.para-test {
+  width: 100%;
+  height: 100%;
+  background-color: red;
+  position: absolute; }
+  .para-test img {
+    min-width: 100%;
+    min-height: 100%; }
+
 .section-bg-gradient {
   background: radial-gradient(gainsboro, #b4b4b4);
   background: linear-gradient(gainsboro, #b4b4b4);
@@ -1167,7 +1176,13 @@ footer {
   width: 100%; }
 
 .about-hero-bg {
-  background-color: #64B4B6; }
+  background-image: url("../../img/MM_about_me_dark.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.center-txt {
+  text-align: center; }
 
 .responsive-headshot {
   padding-left: 2rem;
