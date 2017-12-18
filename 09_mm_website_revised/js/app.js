@@ -1,4 +1,6 @@
+//Check to see it works!!
 console.log("I'm working great!!");
+
 
 //Shrink menu on scroll down
 $(document).on ('scroll', function(){
@@ -19,6 +21,16 @@ $(document).on ('scroll', function(){
     $('#menuToggle span.only-this').addClass('hamburgerColorAlt');
   }
 });
+
+
+// Change page date to current date
+var currentDate = new Date().getFullYear();
+$('.current-date-snipet').html(currentDate);
+
+
+//**************************************//
+//****** TRASH BELOW THIS LINE  ********//
+//**************************************//
 
 // $('.desc-overlay').hover (function() {
 //   console.log("scroll worked!!");

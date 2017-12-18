@@ -931,10 +931,42 @@ footer {
     box-sizing: border-box; }
     footer div img {
       margin-right: 0.75rem; }
-    footer div a {
-      text-decoration: none; }
     footer div .padding-left-s {
       margin-right: 2rem; }
+    footer div .padding-right-xs {
+      margin-right: 1.5rem; }
+  footer .no-stealing {
+    cursor: default; }
+
+.footer-link {
+  text-decoration: none;
+  color: #9d9ce2;
+  display: flex;
+  align-items: center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.footer-link:hover {
+  color: rgba(157, 156, 226, 0.5); }
+  .footer-link:hover p {
+    color: rgba(157, 156, 226, 0.5); }
+
+.footer-link-dark {
+  text-decoration: none;
+  color: #181743;
+  display: flex;
+  align-items: center;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease; }
+
+.footer-link-dark:hover {
+  color: rgba(24, 23, 67, 0.5); }
+  .footer-link-dark:hover p {
+    color: rgba(24, 23, 67, 0.5); }
 
 .home-hero {
   background-color: #582694;
@@ -1557,6 +1589,8 @@ footer {
 
   footer div .responsive-hide-email {
     display: none; }
+  footer div .padding-right-xs {
+    margin-right: 2.5rem; }
 
   .btn-padding-small {
     padding-left: 1.25rem;
@@ -1806,7 +1840,7 @@ footer {
     .desc-overlay:hover .divider-line, .desc-overlay-soon:hover .divider-line {
       background-color: #181743; } }
 @media screen and (max-width: 28.75rem) {
-  p.no-stealing span {
+  .no-stealing-hide {
     display: none; }
 
   .d-01-p-body-hero-w-l span {

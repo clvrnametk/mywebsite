@@ -534,14 +534,62 @@ footer {
       img {
         margin-right: 0.75rem;
       }
-      a {
-        text-decoration: none;
-      }
       .padding-left-s {
         margin-right: 2rem;
       }
+      .padding-right-xs {
+        margin-right: 1.5rem;
+      }
+    }
+
+    .no-stealing {
+      cursor: default;
     }
 }
+
+.footer-link {
+  text-decoration: none;
+  color: rgba(#9d9ce2, 1.0);
+
+  display: flex;
+  align-items: center;
+
+  // Transisiton
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer-link:hover {
+  color: rgba(#9d9ce2, .5);
+    p {
+      color: rgba(#9d9ce2, .5);
+    }
+}
+
+.footer-link-dark {
+  text-decoration: none;
+  color: rgba(#181743, 1.0);
+
+  display: flex;
+  align-items: center;
+
+  // Transisiton
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.footer-link-dark:hover {
+  color: rgba(#181743, .5);
+    p {
+      color: rgba(#181743, .5);
+    }
+}
+
+
 
 
 
@@ -1452,6 +1500,9 @@ footer {
         .responsive-hide-email {
           display: none;
         }
+        .padding-right-xs {
+          margin-right: 2.5rem;
+        }
       }
     }
 
@@ -1822,10 +1873,8 @@ footer {
     //------------------------------------
     // Global Nav
     //------------------------------------
-    p.no-stealing {
-      span {
-        display: none;
-      }
+    .no-stealing-hide {
+      display: none;
     }
     .d-01-p-body-hero-w-l {
         span {
